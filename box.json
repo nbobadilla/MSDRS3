@@ -1,0 +1,38 @@
+{
+    "name":"Elixir VueJS App Template",
+    "version":"2.3.0",
+    "location":"https://github.com/coldbox-templates/elixir-vuejs/archive/v2.3.0.zip",
+    "author":"Ortus Solutions, Corp",
+    "slug":"cbtemplate-elixir-vuejs",
+    "shortDescription":"A ColdBox application template that leverages ColdBox Elixir for assets and VueJS for UI",
+    "createPackageDirectory":false,
+    "type":"mvc",
+    "keywords":"coldbox,app templates,elixir,vuejs",
+    "homepage":"https://github.com/coldbox-templates/elixir-vuejs",
+    "documentation":"https://github.com/coldbox-templates/elixir-vuejs",
+    "repository":{
+        "type":"git",
+        "url":"https://github.com/coldbox-templates/elixir-vuejs"
+    },
+    "bugs":"https://github.com/coldbox-templates/elixir-vuejs/issues",
+    "contributors":[],
+    "ignore":[
+        "readme.md"
+    ],
+    "devDependencies":{
+        "testbox":"^3.0.0",
+        "coldbox-asset-bag":"^1.0.2"
+    },
+    "installPaths":{
+        "coldbox":"coldbox/",
+        "testbox":"testbox/",
+        "coldbox-asset-bag":"modules/coldbox-asset-bag/"
+    },
+    "dependencies":{
+        "coldbox":"^5.0.0"
+    },
+    "scripts":{
+        "postVersion":"package set location='https://github.com/coldbox-templates/elixir-vuejs/archive/v`package version`.zip'",
+        "postPublish":"!git push --follow-tags"
+    }
+}
