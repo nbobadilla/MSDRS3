@@ -4,7 +4,7 @@
         <hola></hola>
     </div>--->
     <a class="sr-only sr-only-focusable d-none d-lg-block" href="##mainContent">Skip Slideshow Carousel</a>
-    <div id="carousel" class="carousel slide carousel-fade d-none d-lg-block" data-ride="carousel">
+    <div id="carousel" class="carousel slide carousel-fade d-none d-lg-block" data-ride="carousel" >
         <ol class="carousel-indicators">
             <li data-target="##carousel" data-slide-to="0" class="active"></li>
             <li data-target="##carousel" data-slide-to="1"></li>
@@ -18,8 +18,8 @@
             </div>--->
             <div></div>
             <div class="carousel-item active" data-interval="20000">
-                <img src="includes/images/mount-rainier-crop-low.jpg" class="d-block w-100" alt="Picture of Rainier Cherries in a bag"/>
-                <div class="carousel-caption d-none d-md-block rounded bg-dark pt-1">
+                <img src="includes/images/cherries-crop-low.jpg" class="d-block w-100" alt="Picture of Rainier Cherries in a bag"/>
+                <div class="carousel-caption d-none d-md-block rounded bg-info p-3">
                     <h2>Welcome to MSDRS</h2>
                     <p>
                         The goal of the Migrant Education Program is to ensure that all migrant students reach challenging 
@@ -30,13 +30,13 @@
                         Migrant Students and district staff.
                     </p>
                     <p>
-                        <a class="btn btn-outline-primary my-2 my-sm-0" href="/main/about-us.cfm" role="button">Learn More</a>
+                        <a class="btn btn-outline-light my-2 my-sm-0" href="/main/about-us.cfm" role="button">Learn More</a>
                     </p><!------>
                 </div>
             </div>
             <div class="carousel-item" data-interval="20000">
                 <img src="includes/images/fields-crop-low.jpg" class="d-block w-100" alt="Picture of fields"/>
-                <div class="carousel-caption d-none d-md-block rounded bg-dark pt-1">
+                <div class="carousel-caption d-none d-md-block rounded bg-info p-3">
                     <h2>Migrant Student Information System</h2>
                     <p>
                         The Migrant Student Data, Recruitment and Support (MSDRS) student records are protected by the 
@@ -49,13 +49,13 @@
                         Non-disclosure of Confidential Information Form each school year before granting access to the MSIS.
                     </p>
                     <p>
-                        <a class="btn btn-outline-primary my-2 my-sm-0" href="/main/request-account" role="button">Request Account</a>
+                        <a class="btn btn-outline-light my-2 my-sm-0" href="/main/request-account" role="button">Request Account</a>
                     </p><!------>
                 </div>
             </div>
             <div class="carousel-item" data-interval="20000">
                 <img src="includes/images/graduates-crop-low.jpg" class="d-block w-100" alt="Picture of Graduates throwing their caps in the air"/>
-                <div class="carousel-caption d-none d-md-block rounded bg-dark pt-1">
+                <div class="carousel-caption d-none d-md-block rounded bg-info p-3">
                     <h2>Rights of Children Enrolled in School</h2>
                     <!---<i>Photo by Clem Onojeghuo</i>--->
                     <p>
@@ -67,7 +67,7 @@
                         U.S. citizens or are undocumented may be in violation of Federal Law.
                     </p>
                     <!---<p>
-                        <a class="btn btn-outline-primary my-2 my-sm-0" href="https://www2.ed.gov/policy/landing.jhtml?src=image" role="button" target="_blank">Learn More</a>
+                        <a class="btn btn-outline-info my-2 my-sm-0" href="https://www2.ed.gov/policy/landing.jhtml?src=image" role="button" target="_blank">Learn More</a>
                     </p>--->
                 </div>
             </div>
@@ -93,7 +93,7 @@
                 Migrant Students and district staff.
             </p>
             <p>
-                <a class="btn btn-outline-primary my-2 my-sm-0" href="/main/about-us.cfm">Learn More</a>
+                <a class="btn btn-outline-info my-2 my-sm-0" href="/main/about-us.cfm">Learn More</a>
             </p>
         </div>
     </div>

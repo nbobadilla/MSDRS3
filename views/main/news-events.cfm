@@ -4,12 +4,12 @@
 <cfset pageURL = '/main/news-events.cfm'>
 <cfoutput>
     <a class="sr-only sr-only-focusable" href="#pageURL###mainContent">Skip Side Navigation</a>
-    <div class="container-fluid mt-3">
+    <div class="container-fluid pt-3">
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 bg">
                 <nav class="nav flex-column mb-3 sticky-top sticky-padding rounded" id="sideNav">
                     <a class="nav-link text-secondary" href="#pageURL###title1">Emails/Newsletters</a>
-                    <a class="nav-link text-secondary" href="#pageURL###title2">Events Database</a>
+                    <a class="nav-link text-secondary" href="#pageURL###title2">Student Events Database</a>
                     <a class="nav-link text-secondary" href="#pageURL###title3">Dare to Dream</a>
                     <a class="nav-link text-secondary" href="#pageURL###title5">Voices from the Field</a>
                     <a class="nav-link text-secondary" href="#pageURL###title4">WA MEP Conference 2019 <span class="badge badge-warning">Register Now!</span></a>
@@ -32,13 +32,13 @@
                 </div>
                 <div id="title2" class="scroll-anchor" aria-hidden="true"></div>
                 <div>
-                    <h2>Events Database</h2>
+                    <h2>Student Events Database</h2>
                     <!--- Content goes here. --->
                     <p>
                         Manage and add migrant students in your District to events such as Dare to Dream and Voices from the Field 
                         using the Events Database.
                     </p>
-                    <cfset redirect="Events">
+                    <cfset redirect="Student Events">
                     <cfinclude  template="/layouts/log-in.cfm">
                     <a class="sr-only sr-only-focusable" href="#pageURL###sideNav">Return to Side Navigation</a>
                     <hr/>   

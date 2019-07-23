@@ -1,7 +1,7 @@
 <cfset pageURL = '/main/about-us.cfm'>
 <cfoutput>
     <a class="sr-only sr-only-focusable" href="#pageURL###mainContent">Skip Side Navigation</a>
-    <div class="container-fluid mt-3">
+    <div class="container-fluid pt-3">
         <div class="row">
             <div class="col-lg-2">
                 <nav class="nav flex-column mb-3 sticky-top sticky-padding rounded" id="sideNav">

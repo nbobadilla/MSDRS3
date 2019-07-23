@@ -33,7 +33,7 @@
 			flex-flow: wrap !important;
 		}
 		.bg-alert{
-			background-color: ##ec9300 !important;
+			background-color: /*##ec9300*/##17a2b8  !important;
 			background-image: url(includes/images/alert-warning@2x.png);
 			background-position: -17px center;
     		background-repeat: no-repeat;
@@ -43,14 +43,32 @@
 			justify-content: center;
 			/*position: relative;*/
 		}
+		.bg-alert a {
+			color: rgba(255, 255, 255, 0.8) !important;
+		}
 		.bg-alert a:hover {
-			color: black !important;
+			color: white !important;
 		}
 		.bg-gray{
 			background-color: ##f5f6f7 !important;
 		}
 		.bg-light-blue{
 			background-color: ##e3f2fd !important;
+		}
+		.bg-nav{
+			background-color: /*##62dd*/ rgba(236, 147, 0, 0.9) !important;
+		}
+		.navbar-dark .navbar-nav .nav-link {
+			color: rgba(255, 255, 255, 0.8);
+		}
+		.navbar-dark .navbar-nav .nav-link:hover {
+			color: white;
+		}
+		a{
+			/*color: ##18a2b8 ;*/
+		}
+		footer p {
+			font-size: 90%;
 		}
 		.sticky-padding{
 			top: 72px !important;
@@ -67,7 +85,7 @@
 		.ui-tooltip {
 			width: inherit;
 			font-size: 80%;
-			background-color: /*##EC92FE*/ ##007bff;
+			background-color: /*##EC92FE ##007bff ##7a44e3 ##17a2b8*/ ##444;
 			color: white;
 			border: none !important;
 		}
@@ -76,6 +94,18 @@
 		}
 		.navbar-nav .nav-link {
 			padding-right: 1rem;
+		}
+		.navbar-dark ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+			color: white;
+			opacity: .7; /* Firefox */
+		}
+
+		.navbar-dark :-ms-input-placeholder { /* Internet Explorer 10-11 */
+			color: white;
+		}
+
+		.navbar-dark ::-ms-input-placeholder { /* Microsoft Edge */
+			color: white;
 		}
 		@media (min-width: 1250px){
 			.navbar-expand-custom {
@@ -121,16 +151,16 @@
 <body id="body">
 	<a class="sr-only sr-only-focusable" href="#pageURL###mainBody">Skip Navigation</a>
 	<div id="nav-alert" class="bg-alert p-3">
-		<a href="/main/attendee-registration.cfm" class="text-white ml-5 pl-3 text-decoration-none">
+		<a href="/main/attendee-registration.cfm" class="ml-5 pl-3 text-decoration-none">
 			Click here to register for the 2019 Washington State Migrant Education Program Conference.
 		</a>
 	</div>
-	<nav id="mainNav" class="navbar sticky-top navbar-expand-custom navbar-light bg-white shadow-sm">
+	<nav id="mainNav" class="navbar sticky-top navbar-expand-custom navbar-dark bg-nav shadow-sm">
 		
 		<a class="navbar-brand mr-auto" href="/" alt="Migrant Student Data, Recruitment and Support" aria-label="Return to Home Page">
 			<!---<img src="includes/images/msdrs-logo.png" width="30" height="30" class="d-inline-block align-top" alt="MSDRS Logo">
 			Migrant Student Data Recruitment & Support--->
-			<img src="includes/images/msdrs-logo-full.png" class="d-inline-block align-top" alt="MSDRS Logo">
+			<img src="includes/images/msdrs-logo-full-white.png" class="d-inline-block align-top" alt="MSDRS Logo">
 		</a>
 		<!---<form class="form-inline my-2 my-lg-0">
 			<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Site Search">
@@ -161,9 +191,9 @@
 				<a id="navForgot" class="nav-item nav-link" href="/main/forgot-password.cfm">Forgot Password</a>
 			</div>
 			<form id="login" class="form-inline my-2 my-lg-0" data-toggle="tooltip" data-placement="bottom" title="You can log into PASS from here too">
-				<input class="form-control mr-sm-2 my-2 my-sm-0" type="Email" placeholder="Email" aria-label="Log in Email">
-				<input class="form-control mr-sm-2 my-2 my-sm-0" type="Password" placeholder="Password" aria-label="Log in Password">
-				<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Log In</button>
+				<input class="form-control mr-sm-2 my-2 my-sm-0 bg-nav text-light border-white" type="Email" placeholder="Email" aria-label="Log in Email">
+				<input class="form-control mr-sm-2 my-2 my-sm-0 bg-nav text-light border-white" type="Password" placeholder="Password" aria-label="Log in Password">
+				<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Log In</button>
 			</form>
 			<div id="msis-link" class="navbar-nav" style="display: none;">
 				<a class="nav-item nav-link" href="##">Return to MSIS</a>
@@ -177,12 +207,12 @@
 		</div>
 	</nav>
 	<!---Container And Views --->
-	<div class="" id="mainBody" style="min-height: 50vh;">
+	<div class="" id="mainBody" style="min-height: 53vh;">
 		#renderView()#
 		<a class="sr-only sr-only-focusable" href="#pageURL###body">End of Page, return to top</a>
 	</div>
 
-	<footer class="footer text-dark bg-light-blue pt-3 align-bottom">
+	<footer class="footer pt-3 align-bottom"  style="background-color: ##222; color: ##eee">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-3">
@@ -229,7 +259,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="row" style="background-color: ##d2e7f5;">
+			<div class="row" style="background-color: ##000;">
 				<div class="col-lg-12">
 					<p class="text-secondary text-center mt-2">
 						<small>Copyright 2019 Migrant Student Data Recruitment and Support. All rights reserved.
