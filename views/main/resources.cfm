@@ -8,7 +8,11 @@
         <div class="row">
             <div class="col-lg-2">
                 <nav class="nav flex-column mb-3 sticky-top sticky-padding rounded" id="sideNav">
-                    <a class="nav-link text-secondary" href="#pageURL###title1">Resources</a>
+                    <a class="nav-link text-secondary" href="#pageURL###resources">Resources</a>
+                    <!---<a class="nav-link text-secondary logged-out" href="#pageURL###edstaff">Education Staff</a>
+                    <a class="nav-link text-secondary logged-out" href="#pageURL###fpd">Federal Programs Director (FPD)</a>
+                    <a class="nav-link text-secondary logged-out" href="#pageURL###rc">Records Clerk</a>
+                    <a class="nav-link text-secondary logged-out" href="#pageURL###rt">Recruiter</a>--->
                     <a class="nav-link text-secondary" href="#pageURL###title2">MEP External Links</a>
                     <a class="nav-link text-secondary" href="/main/news-events.cfm">MEP Events</a>
                     <a class="nav-link text-secondary" href="/main/pass.cfm">PASS</a>
@@ -17,14 +21,168 @@
                 </nav>
             </div>
             <div class="col-lg-10" id="mainContent">
-                <div id="title1" class="scroll-anchor" aria-hidden="true"></div>
-                <div>
-                    <h2>Resources</h2>
-                    <p>View useful migrant documents and resources for Recruiters, Records Clerks, and other education staff.</p>
+                <div id="resources" class="scroll-anchor" aria-hidden="true"></div>
+                
+                <h2>Resources</h2>
+                <p>
+                    View useful migrant documents and resources for Federal Programs Directors (FPDs),
+                    Recruiters, Records Clerks, and other education staff.
+                </p>
+                <div class="logged-out">  
                     <cfset redirect="Resources">
                     <cfinclude  template="/layouts/log-in.cfm">
-                    <hr/>   
                 </div>
+                <div class="logged-in row" style="display: none;" aria-hidden="true">
+                    <div class="col-lg">
+                        <div class="d-flex flex-column pb-4">
+                            <h4>Definitions</h4>
+                            <a class="p-1"  href="link">Priority for Service (PFS) Definition</a>
+                            <a class="p-1"  href="link">Supplemental Service Definitions</a>
+                        </div>
+                    <!---</div>
+                    <div class="col-lg">--->
+                        <div class="d-flex flex-column pb-4">
+                            <h4>Federal Programs Director (FPD)</h4>
+                            <a class="p-1"  href="link">USDA Establishing Migrant Eligibility (November 2004)</a>
+                            <a class="p-1"  href="link">USDA Migrant Free Lunch Eligibility (August 2004)</a>
+                            <a class="p-1"  href="link">OSPI Free Lunch Memo (December 2005)</a>
+                        </div>
+                    <!---</div>
+                    <div class="col-lg">--->
+                        <div class="d-flex flex-column pb-4">
+                            <h4>Helpful Resources</h4>
+                            <a class="p-1"  href="link">District Identifcation & Recruitment (ID&R) Plan</a>
+                            <a class="p-1"  href="link">Family Educational Rights and Privacy Act (FERPA)</a>
+                            <a class="p-1"  href="link">History of MEP</a>
+                            <a class="p-1"  href="link">MEP Eligibility Criteria</a>
+                            <a class="p-1"  href="link">MEP Guidance</a>
+                            <a class="p-1"  href="link">Migrant Physical and Dental Exams</a>
+                            <a class="p-1"  href="link">MSDRS Planner</a>
+                            <a class="p-1"  href="link">MSIS and ID&R Record Retention Requirements</a>
+                            <a class="p-1"  href="link">Quality Control Policies and Procedures</a>
+                            <a class="p-1"  href="link">Referred Services Form</a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="d-flex flex-column pb-4">
+                            <h4>Job Descriptions</h4>
+                            <a class="p-1"  href="link">Graduation Specialist</a>
+                            <a class="p-1"  href="link">Records Clerk</a>
+                            <a class="p-1"  href="link">Recruiter</a>
+                            <a class="p-1"  href="link">Student Advocate</a>
+                        </div>
+                    <!---</div>
+                    <div class="col-lg">--->
+                        <div class="d-flex flex-column pb-4">
+                            <h4>Maps</h4>
+                            <a class="p-1"  href="link">All Districts</a>
+                            <a class="p-1"  href="link">Non-Project Districts</a>
+                            <a class="p-1"  href="link">Project Districts</a>
+                        </div>
+                    <!---</div>
+                    <div class="col-lg">--->
+                        <div class="d-flex flex-column pb-4">
+                            <h4>Out of School Youth (OSY)</h4>
+                            <a class="p-1"  href="link">Brochure (Clark, Cowlitz, and Thurston Counties)</a>
+                            <a class="p-1"  href="link">Brochure (Grant and Ferry Counties)</a>
+                            <a class="p-1"  href="link">Brochure (Grays Harbor, Kitsap, and Mason Counties)</a>
+                            <a class="p-1"  href="link">Brochure (Kittitas County)</a>
+                            <a class="p-1"  href="link">Brochure (King and Pierce Counties)</a>
+                            <a class="p-1"  href="link">Brochure (Skagit County)</a>
+                            
+                            <a class="p-1"  href="link">Brochure (Walla Walla County)</a>
+                            <a class="p-1"  href="link">Brochure (Whatcom County)</a>
+                            <a class="p-1"  href="link">Brochure (Yakima County)</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg">
+                        <div class="d-flex flex-column pb-4">
+                            <h4>Records Clerk</h4>
+                            <a class="p-1"  href="link">MSIS Handbook</a>
+                            <a class="p-1"  href="link">MSIS Reports Booklet</a>
+                        </div>
+                    <!---</div>
+                    <div class="col-lg">--->
+                        <div class="d-flex flex-column pb-4">
+                            <h4>Recruiter</h4>
+                            <a class="p-1"  href="link">Challenged COE Form</a>
+                            <a class="p-1"  href="link">Elligibility Certification (COE)</a>
+                            <a class="p-1"  href="link">Have You Recently Moved?</a>
+                            <a class="p-1"  href="link">Home and Private School Form</a>
+                            <a class="p-1"  href="link">Home and Private School Form (Spanish)</a>
+                            <a class="p-1"  href="link">ID&R Handbook</a>
+                            <a class="p-1"  href="link">Individual MEP Recruiter Plan</a>
+                            <a class="p-1"  href="link">Migrant Recruiter Log Form</a>
+                            <a class="p-1"  href="link">Qualifying Activities and Crops</a>
+                            <a class="p-1"  href="link">Qualifying Moves and MEP Eligibilty Criteria Handouts</a>
+                            <a class="p-1"  href="link">Qualifying Moves for the MEP (Video)</a>
+                            <a class="p-1"  href="link">Recruiters Guide to Determine Eligibilty</a>
+                            <a class="p-1"  href="link">Reference Guide for COE Completion</a>
+                            <a class="p-1"  href="link">Washington State Licensed Farm Labor Contractors</a>
+                            <a class="p-1"  href="link">Washington Temporary Farm Worker Housing</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!---<div class="logged-out row" style="display: none;">
+                    <div class="col">
+                        <hr/> 
+                        <div id="edstaff" class="scroll-anchor" aria-hidden="true"></div>
+                        <h2>Education Staff</h2>
+                        <p>
+                            MSDRS Staff in Sunnyside, WA provide Educational Staff Training to various staff throughout 
+                            the state of Washington.
+                        </p>
+                        
+                    </div>
+                    <div class="w-100"></div><!---this start a new row for columns--->
+                    <div class="col-lg pb-4">
+                        <div class="d-flex flex-column">
+                            <h4>Helpful Resources</h4>
+                            <a class="p-1"  href="http://www.cwu.edu/hep/">Central Washington University</a>
+                            <a class="p-1"  href="http://www.columbiabasin.edu/index.aspx?page=518">Columbia Basin College</a>
+                            <a class="p-1"  href="http://www.heritage.edu/Future-Students/Support-Services/HEP-Program">Heritage University</a>
+                            <a class="p-1"  href="http://www.hep.wsu.edu/">Washington State University</a>
+                        </div>
+                    </div>
+                    <div class="w-100"></div><!---this start a new row for columns--->
+                    
+                    <div class="col">
+                        <hr/> 
+                        <div id="fpd" class="scroll-anchor" aria-hidden="true"></div>
+                        <h2>Federal Programs Director (FPD)</h2>
+                        <p>
+                            MSDRS Staff in Sunnyside, WA provide Educational Staff Training to various staff throughout 
+                            the state of Washington.
+                        </p>
+                    </div>
+                    <div class="w-100"></div><!---this start a new row for columns--->
+                    
+                    <div class="col">
+                        <hr/>
+                        <div id="rc" class="scroll-anchor" aria-hidden="true"></div>
+                        <h2>Records Clerk</h2>
+                        <p>
+                            MSDRS Staff in Sunnyside, WA provide Educational Staff Training to various staff throughout 
+                            the state of Washington.
+                        </p>
+                    </div>
+                    <div class="w-100"></div><!---this start a new row for columns--->
+                    
+                    <div class="col">
+                        <hr/>
+                        <div id="rt" class="scroll-anchor" aria-hidden="true"></div>
+                        <h2>Recruiter</h2>
+                        <p>
+                            MSDRS Staff in Sunnyside, WA provide Educational Staff Training to various staff throughout 
+                            the state of Washington.
+                        </p>
+                    </div>
+                    <div class="w-100"></div><!---this start a new row for columns--->
+                </div>--->
+                <hr/>  
                 <div id="title2" class="scroll-anchor" aria-hidden="true"></div>
                 <div class="row">
                     <div class="col pb-4">
@@ -37,11 +195,14 @@
                     <div class="w-100"></div><!---this start a new row for columns--->
                     <div class="col-lg pb-4">
                         <div class="d-flex flex-column">
-                            <h4>High School Equivalency Program (HEP)</h4>
-                            <a class="p-1"  href="http://www.cwu.edu/hep/">Central Washington University</a>
-                            <a class="p-1"  href="http://www.columbiabasin.edu/index.aspx?page=518">Columbia Basin College</a>
-                            <a class="p-1"  href="http://www.heritage.edu/Future-Students/Support-Services/HEP-Program">Heritage University</a>
-                            <a class="p-1"  href="http://www.hep.wsu.edu/">Washington State University</a>
+                            <h4 class="">College Assistance Migrant Program (CAMP)</h4>
+                            <a class="p-1" href="http://www.cwu.edu/camp">Central Washington University</a>
+                            <a class="p-1" href="http://www.columbiabasin.edu/camp">Columbia Basin College</a>
+                            <a class="p-1" href="http://www.ewu.edu/css/camp">Eastern Washington University</a>
+                            <a class="p-1" href="http://www.heritage.edu/camp">Heritage University</a>
+                            <a class="p-1" href="http://www.depts.washington.edu/omadcs/camp/">University of Washington</a>
+                            <a class="p-1" href="http://www.camp.wsu.edu/">Washington State University</a>
+                            <a class="p-1" href="http://www.wvc.edu/camp">Wenatchee Valley College</a>
                         </div>
                     </div>
 
@@ -54,20 +215,17 @@
                         </div>
                     </div>
                     
-                    
-                    
                     <div class="col-lg pb-4">
                         <div class="d-flex flex-column">
-                            <h4 class="">College Assistance Migrant Program (CAMP)</h4>
-                            <a class="p-1" href="http://www.cwu.edu/camp">Central Washington University</a>
-                            <a class="p-1" href="http://www.columbiabasin.edu/camp">Columbia Basin College</a>
-                            <a class="p-1" href="http://www.ewu.edu/css/camp">Eastern Washington University</a>
-                            <a class="p-1" href="http://www.heritage.edu/camp">Heritage University</a>
-                            <a class="p-1" href="http://www.depts.washington.edu/omadcs/camp/">University of Washington</a>
-                            <a class="p-1" href="http://www.camp.wsu.edu/">Washington State University</a>
-                            <a class="p-1" href="http://www.wvc.edu/camp">Wenatchee Valley College</a>
+                            <h4>High School Equivalency Program (HEP)</h4>
+                            <a class="p-1"  href="http://www.cwu.edu/hep/">Central Washington University</a>
+                            <a class="p-1"  href="http://www.columbiabasin.edu/index.aspx?page=518">Columbia Basin College</a>
+                            <a class="p-1"  href="http://www.heritage.edu/Future-Students/Support-Services/HEP-Program">Heritage University</a>
+                            <a class="p-1"  href="http://www.hep.wsu.edu/">Washington State University</a>
                         </div>
                     </div>
+                    
+                    
                     
                     <div class="col-lg pb-4">                        
                         <div class="d-flex flex-column">
@@ -93,7 +251,7 @@
                     
                     <div class="col-lg pb-4">
                         <div class="d-flex flex-column">
-                            <h4 class="">Other Useful Links for Students</h4>
+                            <h4 class="">Useful Links for Students</h4>
                             <a class="p-1" href="https://www.sbctc.edu/becoming-a-student/default.aspx">Becoming a Student</a>
                             <a class="p-1" href="https://hepcampassociation.org/">HEP/CAMP Association</a>
                             <a class="p-1" href="https://www.k12.wa.us/support-programs/equity-education/migrant-education-program/immigrant-student%E2%80%99s-rights-attend-public">Immigrant Students Rights to Attend Public School</a>

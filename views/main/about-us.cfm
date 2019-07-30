@@ -41,7 +41,15 @@
                     <div>
                     <h2>Migrant Student Data</h2>
                     <p>
-                        MSDRS Staff maintain the Washington migrant student database known as the Migrant Student Information System (MSIS). 
+                        The MSDRS Office hosts the Migrant Student Information System (MSIS) 
+                        and oversees the transfer of Migrant Education Program student academic 
+                        and health records in Washington State. The MSDRS Office receives academic 
+                        and health data on over 32,000 students from migrant-funded school districts and preschools.
+                        Online access to the statewide MSIS is available through secure Internet communication lines 
+                        from school district and preschool agency staff that provide service to migrant students. 
+                        Migrant-funded agencies and school districts are able to access their individual student information 
+                        or district reports online. A toll-free line (800-274-6084) enables school districts 
+                        and preschool agencies to contact MSDRS staff when additional assistance is needed.
                     </p>
                     <p>
                         <a href="##">Click here to request access to MSIS.</a>

@@ -22,16 +22,22 @@
                 <div class="carousel-caption d-none d-md-block rounded bg-info p-3">
                     <h2>Welcome to MSDRS</h2>
                     <p>
-                        The goal of the Migrant Education Program is to ensure that all migrant students reach challenging 
+                        <!---The goal of the Migrant Education Program is to ensure that all migrant students reach challenging 
                         academic standards and graduate with a high school diploma (or complete a GED) that prepares them 
                         for responsible citizenship, further learning, and productive employment.
                         MSDRS is funded by the State of Washington Office of Superintendent of Public Instruction (OSPI) 
                         in partnership with Sunnyside School District. MSDRS Provides a number of different services for 
-                        Migrant Students and district staff.
+                        Migrant Students and district staff.--->
+                        The goal of the Title I Part C Migrant Education Program is to ensure all migrant students reach 
+                        challenging academic standards and graduate with a high school diploma (or equivalent) that prepares 
+                        them for responsible citizenship, further learning, and productive employment. 
+                        As a support office funded by the Office of Superintendent of Public Instruction’s Migrant Education Program, 
+                        MSDRS play a significant role in implementing state program directives. A working agreement between OSPI and 
+                        Sunnyside School District ensures program requirements and activities are implemented in a timely fashion.
                     </p>
                     <p>
                         <a class="btn btn-outline-light my-2 my-sm-0" href="/main/about-us.cfm" role="button">Learn More</a>
-                    </p><!------>
+                    </p>
                 </div>
             </div>
             <div class="carousel-item" data-interval="20000">
@@ -85,15 +91,15 @@
         <div class="container-fluid">
             <h2>Welcome to MSDRS</h2>
             <p class="lead">
-                The goal of the Migrant Education Program is to ensure that all migrant students reach challenging 
-                academic standards and graduate with a high school diploma (or complete a GED) that prepares them 
-                for responsible citizenship, further learning, and productive employment.
-                MSDRS is funded by the State of Washington Office of Superintendent of Public Instruction (OSPI) 
-                in partnership with Sunnyside School District. MSDRS Provides a number of different services for 
-                Migrant Students and district staff.
+                The goal of the Title I Part C Migrant Education Program is to ensure all migrant students reach 
+                challenging academic standards and graduate with a high school diploma (or equivalent) that prepares 
+                them for responsible citizenship, further learning, and productive employment. 
+                As a support office funded by the Office of Superintendent of Public Instruction’s Migrant Education Program, 
+                MSDRS play a significant role in implementing state program directives. A working agreement between OSPI and 
+                Sunnyside School District ensures program requirements and activities are implemented in a timely fashion.
             </p>
             <p>
-                <a class="btn btn-outline-info my-2 my-sm-0" href="/main/about-us.cfm">Learn More</a>
+                <a class="btn btn-outline-primary my-2 my-sm-0" href="/main/about-us.cfm">Learn More</a>
             </p>
         </div>
     </div>
@@ -130,7 +136,7 @@
                 </p>
                 <p>
                     <a class="btn btn-outline-primary my-2 my-sm-0" href="/main/news-events.cfm" role="button">Learn More</a>
-                    <a class="btn btn-outline-primary my-2 my-sm-0" href="/main/news-events.cfm##log-in" role="button">Log In</a>
+                    <!---<a class="btn btn-outline-primary my-2 my-sm-0" href="/main/news-events.cfm##log-in" role="button">Log In</a>--->
                 </p>
             </div>
             <div class="col-lg-3">
@@ -141,7 +147,7 @@
                 </p>
                 <p>
                     <a class="btn btn-outline-primary my-2 my-sm-0" href="/main/pass.cfm" role="button">Learn More</a>
-                    <a class="btn btn-outline-primary my-2 my-sm-0" href="/main/pass.cfm##log-in" role="button">Log In</a>
+                    <!---<a class="btn btn-outline-primary my-2 my-sm-0" href="/main/pass.cfm##log-in" role="button">Log In</a>--->
                 </p>
             </div>
             

@@ -40,14 +40,21 @@
             <p class="card-text">
                 Log In to access this content.
             </p>
-            <form>
+            <form <cfif redirect EQ 'PASS'>action="http://msis.msdr.org/wapass123/main.cfm"<cfelse>action="https://msis.msdr.org/scripts/_checkLogin.cfm"</cfif> method="post">
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email"></input>
+                    <cfif redirect EQ 'PASS'>
+                        <input type="hidden" name="newLogin" value="Y">
+                        <label for="email">Username</label>
+                    
+                        <input type="text" class="form-control" id="email" placeholder="Username"></input>
+                    <cfelse>
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="fUsername" placeholder="Email"></input>
+                    </cfif>
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password"></input>
+                    <input type="password" class="form-control" id="password" name="fPassword" placeholder="Password"></input>
                 </div>
                 <div class="d-flex flex-column">
                     <a href="/main/forgot-password.cfm">Click here if you forgot your password</a>

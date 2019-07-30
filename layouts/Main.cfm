@@ -29,11 +29,14 @@
 	</cfscript>
 	<!---CSS Styling to customize breakpoint of the nav bar and other Bootstrap styling extended--->
 	<style>
+	body{
+		font-weight: 300;
+	}
 		.navbar-expand-xl {
 			flex-flow: wrap !important;
 		}
 		.bg-alert{
-			background-color: /*##ec9300*/##17a2b8  !important;
+			background-color: ##ec9300/*##17a2b8*/  !important;
 			background-image: url(includes/images/alert-warning@2x.png);
 			background-position: -17px center;
     		background-repeat: no-repeat;
@@ -56,7 +59,7 @@
 			background-color: ##e3f2fd !important;
 		}
 		.bg-nav{
-			background-color: /*##62dd*/ rgba(236, 147, 0, 0.9) !important;
+			background-color: /*##62dd rgba(236, 147, 0, 0.9)*/ rgba(38, 174, 63, 1.0)!important;
 		}
 		.navbar-dark .navbar-nav .nav-link {
 			color: rgba(255, 255, 255, 0.8);
@@ -172,7 +175,8 @@
 			<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Log In</button>
 		</form>--->
 		<small class="navbar-nav flex-sm-row mt-1" id="top-links">
-			<a class="nav-link pt-0" href="/main/log-in.cfm?redirect=FER">FER Scheduler</a>
+			<a class="nav-link pt-0 logged-out" href="/main/log-in.cfm?redirect=FER">FER Scheduler</a>
+			<a class="nav-link pt-0 logged-in" href="https://msis.msdr.org/msis/scheduler/index.cfm" aria-hidden="true">FER Scheduler</a>
 			<a class="nav-link pt-0" href="http://health.msdr.org/">Health Program</a>
 			<a class="nav-link pt-0" href="/main/news-events.cfm">MEP Events</a>
 			<a class="nav-link pt-0" href="/main/pass.cfm">PASS</a>
@@ -190,12 +194,12 @@
 				<a id="navRequest" class="nav-item nav-link" href="/main/request-account.cfm">Request Account</a>
 				<a id="navForgot" class="nav-item nav-link" href="/main/forgot-password.cfm">Forgot Password</a>
 			</div>
-			<form id="login" class="form-inline my-2 my-lg-0" data-toggle="tooltip" data-placement="bottom" title="You can log into PASS from here too">
-				<input class="form-control mr-sm-2 my-2 my-sm-0 bg-nav text-light border-white" type="Email" placeholder="Email" aria-label="Log in Email">
-				<input class="form-control mr-sm-2 my-2 my-sm-0 bg-nav text-light border-white" type="Password" placeholder="Password" aria-label="Log in Password">
+			<form action="https://msis.msdr.org/scripts/_checkLogin.cfm" method="post" id="login" class="form-inline my-2 my-lg-0 logged-out" data-toggle="tooltip" data-placement="bottom" title="You can log into PASS from here too">
+				<input class="form-control mr-sm-2 my-2 my-sm-0 bg-nav text-light border-white" type="text" placeholder="Email or Username" name="fUsername" aria-label="Log in Email">
+				<input class="form-control mr-sm-2 my-2 my-sm-0 bg-nav text-light border-white" type="Password" placeholder="Password" name="fPassword" aria-label="Log in Password">
 				<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Log In</button>
 			</form>
-			<div id="msis-link" class="navbar-nav" style="display: none;">
+			<div id="msis-link" class="navbar-nav logged-in" style="display: none;" aria-hidden="true">
 				<a class="nav-item nav-link" href="##">Return to MSIS</a>
 			</div>
 			<!---
@@ -318,12 +322,12 @@
 		$(function(){
 			//$('##msis-link').hide();
 			if(decodeURIComponent(getCookie('MSISEXP')) != ""){
-				$('##msis-link').show();
-				$('##login').hide();
+				$('.logged-in').show();
+				$('.logged-out').hide();
 			}
 			else{
-				$('##login').show();
-				$('##msis-link').hide();
+				$('.logged-out').show();
+				$('.logged-in').hide();
 			};
 			/*$(["/"]).each(
 			function(index, value){
@@ -343,8 +347,10 @@
 			//alert(offsets.top)
 			$('[data-toggle="tooltip"]').tooltip();
 			if( $('.navbar-toggler').css('display') == 'none' ){
-				$('[data-toggle="tooltip"]').tooltip().tooltip("open");
-				setTimeout(function(){ $('[data-toggle="tooltip"]').tooltip().tooltip("close"); }, 5000);	
+				if(decodeURIComponent(getCookie('MSISEXP')) == ""){
+					$('[data-toggle="tooltip"]').tooltip().tooltip("open");
+					setTimeout(function(){ $('[data-toggle="tooltip"]').tooltip().tooltip("close"); }, 5000);
+				}	
 			}
 			//$( '##login' ).focus(function(){$('[data-toggle="tooltip"]').tooltip().tooltip("open");});
 			/*$( document ).scroll(function(){ $('[data-toggle="tooltip"]').tooltip().tooltip("close");});*/

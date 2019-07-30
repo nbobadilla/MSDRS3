@@ -38,8 +38,14 @@
                         Manage and add migrant students in your District to events such as Dare to Dream and Voices from the Field 
                         using the Events Database.
                     </p>
-                    <cfset redirect="Student Events">
-                    <cfinclude  template="/layouts/log-in.cfm">
+                    <div class="logged-out">
+                        <cfset redirect="Student Events">
+                        <cfinclude  template="/layouts/log-in.cfm">
+                    </div>
+                    <a class="logged-in">
+                        <a href="https://msis.msdr.org/DTD/">Click here to go the the Student Events Database.</a>
+                    </a>
+                    
                     <a class="sr-only sr-only-focusable" href="#pageURL###sideNav">Return to Side Navigation</a>
                     <hr/>   
                 </div>
