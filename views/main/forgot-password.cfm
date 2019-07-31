@@ -39,7 +39,7 @@
                         <label for="email" class="mb-0">Account Email Address</label>
                         <small id="email-help" class="form-text text-muted">Use the same Email when the account was requested.</small>
                         <div class="input-group">
-                            <input type="email" class="form-control" id="email" placeholder="Account Email Address"></input>
+                            <input type="email" class="form-control" id="email" placeholder="Email"></input>
                             <div class="input-group-append">
                                 <button type="submit" class="btn btn-outline-primary">Reset Password</button>
                             </div>

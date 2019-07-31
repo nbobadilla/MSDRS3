@@ -35,7 +35,7 @@
                 <p>
                     <a href="/main/exhibitor-registration.cfm">Click here to register as an <strong>Exhibitor</strong></a>
                 </p>
-                <form class="mb-5 p-4 border rounded bg-light" method="post" name="attendeeInfo">
+                <form class="mb-5 p-4 border rounded bg-light" action="http://msis.msdr.org/news-events/webservice/confirmation.cfm" method="post" id="attendeeInfo" name="attendeeInfo">
                     <input name="event" type="hidden" value="183">
                     <input name="referer" type="hidden" value="index">
 
@@ -134,10 +134,115 @@
                     <div class="form-check">
                         <input class="form form-check-input" type="checkbox" name="glutenFree" value="1" id="">
                         <label class="form-check-label" for="">Gluten Free Meals Only (Applies to all)</label>
-                        <button type="submit" class="btn btn-outline-primary mb-5 float-right">Submit</button>
+                    </div>
+                    <div class="form-group mb-5 mt-3">
+                        <button type="submit" class="btn btn-outline-primary float-right">Submit</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </cfoutput>
+<script>
+    
+    $.ajax({
+
+        url: "https://msis.msdr.org/web_services/districtDirectory.cfc",
+
+        type:"get",
+
+        dataType: "jsonp",
+
+        jsonpCallback:"callback",
+
+        data: { method:"getNonDistrictDirectoryJSONP" }
+
+    });
+    function callback(resp){
+
+        var districts = [];
+
+        distObj = [];
+
+        $.each(resp.DATA, function(i, el){
+
+            if($.inArray(el[0], districts) === -1){
+
+            districts.push(el[0])
+
+            distObj.push({district: el[0], distid : el[1]})
+
+            };
+
+        });
+
+        $('#district').append('<optgroup label=""></optgroup>');
+
+        $('#district').append('<optgroup label="Non Project Agencies">');
+
+        $.each(distObj, function (i, dist) {
+
+            $('#district').append($('<option>', {
+
+                value: dist.distid,
+
+                text : dist.district
+
+            }));
+
+        });
+
+        $('#district').append('</optgroup>');
+
+    }
+    $.ajax({
+
+        url: "https://msis.msdr.org/web_services/districtDirectory.cfc",
+
+        type:"get",
+
+        dataType: "jsonp",
+
+        jsonpCallback:"cb",
+
+        data: { method:"getDirectoryJSONP" }
+
+    });
+    function cb(resp){
+
+        var districts = [];
+
+        distObj = [];
+
+        $.each(resp.DATA, function(i, el){
+
+            if($.inArray(el[0], districts) === -1){
+
+            districts.push(el[0])
+
+            distObj.push({district: el[0], distid : el[1]})
+
+            };
+
+        });
+
+        $('#district').append('<optgroup label=""></optgroup>');
+
+        $('#district').append('<optgroup label="Migrant Project Agencies">');
+
+        $.each(distObj, function (i, dist) {
+
+            $('#district').append($('<option>', {
+
+                value: dist.distid,
+
+                text : dist.district
+
+            }));
+
+        });
+
+        $('#district').append('</optgroup>');
+
+    }
+</script>

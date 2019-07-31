@@ -14,6 +14,7 @@
                         <a class="nav-link text-secondary" href="/main/pass.cfm">PASS</a>
                     </nav>
                     <a class="nav-link text-secondary" href="#pageURL###staff">Staff Directory</a>
+                    <a href="#pageURL###secretary" style="width: fit-content;" class="badge badge-warning ml-3">Position Available!</a>
                     <a aria-hidden="true" class="nav-link d-none d-lg-block text-secondary" href="#pageURL###body">Back to Top</a>
                 </nav>
             </div>
@@ -203,9 +204,10 @@
                         Publication Specialist/Events Manager<br/>
                         <a href="##">Elizabeth Ramos</a><br/>
                     </p>
+                    <div id="secretary" class="scroll-anchor" aria-hidden="true"></div>
                     <p>
-                        Secretary<br/>
-                        <a href="##">Amanda Melendrez</a><br/>
+                        Secretary <span class="badge badge-warning">Position Available!</span><br/>
+                        <a href="https://sunnyside.tedk12.com/hire/ViewJob.aspx?JobID=4309">View Listing</a><br/>
                     </p>
                     <a class="sr-only sr-only-focusable" href="#pageURL###sideNav">Return to About Us Navigation</a>
                 </div>

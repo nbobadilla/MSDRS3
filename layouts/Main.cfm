@@ -6,7 +6,9 @@
 	<meta charset="utf-8">
 	<title>MSDRS</title>
 	<meta name="description" content="ColdBox Application Template">
-    <meta name="author" content="Ortus Solutions, Corp">
+	<meta name="author" content="Ortus Solutions, Corp">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!---Base URL Might Need to Remove this--->
 	<base href="#event.getHTMLBaseURL()#" />
 
@@ -59,7 +61,7 @@
 			background-color: ##e3f2fd !important;
 		}
 		.bg-nav{
-			background-color: /*##62dd rgba(236, 147, 0, 0.9)*/ rgba(38, 174, 63, 1.0)!important;
+			background-color: /*##62dd rgba(236, 147, 0, 0.9)*/ /* rgba(38, 174, 63, 1.0) rgba(78,139,249,1)*/ rgb(145,145,145,1)!important;
 		}
 		.navbar-dark .navbar-nav .nav-link {
 			color: rgba(255, 255, 255, 0.8);
@@ -72,6 +74,13 @@
 		}
 		footer p {
 			font-size: 90%;
+		}
+		footer a {
+			color: ##99a2ab;
+		}
+		footer a:hover {
+			color: ##f8f9fa;
+			text-decoration: none;
 		}
 		.sticky-padding{
 			top: 72px !important;
@@ -158,12 +167,15 @@
 			Click here to register for the 2019 Washington State Migrant Education Program Conference.
 		</a>
 	</div>
-	<nav id="mainNav" class="navbar sticky-top navbar-expand-custom navbar-dark bg-nav shadow-sm">
+	<nav id="mainNav" class="navbar sticky-top navbar-expand-custom navbar-dark bg-secondary shadow-sm">
 		
 		<a class="navbar-brand mr-auto" href="/" alt="Migrant Student Data, Recruitment and Support" aria-label="Return to Home Page">
 			<!---<img src="includes/images/msdrs-logo.png" width="30" height="30" class="d-inline-block align-top" alt="MSDRS Logo">
 			Migrant Student Data Recruitment & Support--->
-			<img src="includes/images/msdrs-logo-full-white.png" class="d-inline-block align-top" alt="MSDRS Logo">
+			<img src="includes/images/msdrs-logo-full-white.png" class=" align-top d-none d-lg-block" alt="MSDRS Logo">
+			<span class="d-lg-none">
+				MSDRS
+			</span>
 		</a>
 		<!---<form class="form-inline my-2 my-lg-0">
 			<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Site Search">
@@ -195,12 +207,12 @@
 				<a id="navForgot" class="nav-item nav-link" href="/main/forgot-password.cfm">Forgot Password</a>
 			</div>
 			<form action="https://msis.msdr.org/scripts/_checkLogin.cfm" method="post" id="login" class="form-inline my-2 my-lg-0 logged-out" data-toggle="tooltip" data-placement="bottom" title="You can log into PASS from here too">
-				<input class="form-control mr-sm-2 my-2 my-sm-0 bg-nav text-light border-white" type="text" placeholder="Email or Username" name="fUsername" aria-label="Log in Email">
-				<input class="form-control mr-sm-2 my-2 my-sm-0 bg-nav text-light border-white" type="Password" placeholder="Password" name="fPassword" aria-label="Log in Password">
+				<input class="form-control mr-sm-2 my-2 my-sm-0 bg-transparent text-light border-white" type="text" placeholder="Email or Username" name="fUsername" aria-label="Log in Email">
+				<input class="form-control mr-sm-2 my-2 my-sm-0 bg-transparent text-light border-white" type="Password" placeholder="Password" name="fPassword" aria-label="Log in Password">
 				<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Log In</button>
 			</form>
 			<div id="msis-link" class="navbar-nav logged-in" style="display: none;" aria-hidden="true">
-				<a class="nav-item nav-link" href="##">Return to MSIS</a>
+				<a class="nav-item nav-link" href="http://msis.msdr.org/msis/searchscreen/index.cfm">Return to MSIS</a>
 			</div>
 			<!---
 			<div class="navbar-nav">
@@ -216,7 +228,7 @@
 		<a class="sr-only sr-only-focusable" href="#pageURL###body">End of Page, return to top</a>
 	</div>
 
-	<footer class="footer pt-3 align-bottom"  style="background-color: ##222; color: ##eee">
+	<footer class="footer pt-3 align-bottom text-light bg-dark"  style="background-color: ##333;">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-3">
@@ -243,8 +255,9 @@
 				<div class="col-lg-3">
 					<h6>Navigation</h6>
 					<p class="d-flex flex-column">
-						<a href="/">Home</a>
+						
 						<a href="/main/attendee-registration.cfm">State MEP Conference <span class="badge badge-warning">Register Now!</span></a>
+						<a href="/">Home</a>
 						<a href="/main/log-in.cfm?redirect=FER"><abbr title="Federal Education Review" aria-label="Federal Education Review">FER</abbr> Scheduler</a>
 						<a href="http://health.msdr.org/">Health Program</a>
 						<a href="/main/news-events.cfm"><abbr title="Migrant Education Program" aria-label="Migrant Education Program">MEP</abbr> Events</a>
@@ -252,7 +265,7 @@
 					</p>
 				</div>
 				<div class="col-lg-3">
-					<p class="d-flex flex-column mt-4">
+					<p class="d-flex flex-column">
 						<a href="/main/about-us.cfm">About Us</a>
 						<a href="/main/district-directory.cfm">District Directory</a>
 						<!---<a href="/main/mep-links.cfm">MEP Links</a>--->
@@ -263,9 +276,9 @@
 					</p>
 				</div>
 			</div>
-			<div class="row" style="background-color: ##000;">
+			<div class="row" style="background-color: inherit;">
 				<div class="col-lg-12">
-					<p class="text-secondary text-center mt-2">
+					<p class="text-secondary text-center mt-3">
 						<small>Copyright 2019 Migrant Student Data Recruitment and Support. All rights reserved.
 							<a href="#pageURL###body"><i class="glyphicon glyphicon-arrow-up"></i> Back to top</a>
 						</small>

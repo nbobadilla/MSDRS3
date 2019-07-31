@@ -14,6 +14,7 @@
                     <a class="nav-link text-secondary" href="#pageURL###title5">Voices from the Field</a>
                     <a class="nav-link text-secondary" href="#pageURL###title4">WA MEP Conference 2019 <span class="badge badge-warning">Register Now!</span></a>
                     <nav class="nav flex-column rounded ml-4">
+                        <a class="nav-link text-secondary" href="/main/agenda.cfm">Agenda</a>
                         <a class="nav-link text-secondary" href="/main/attendee-registration.cfm">Attendee Registration</a>
                         <a class="nav-link text-secondary" href="/main/exhibitor-registration.cfm">Exhibitor Registration</a>
                     </nav>
@@ -42,9 +43,8 @@
                         <cfset redirect="Student Events">
                         <cfinclude  template="/layouts/log-in.cfm">
                     </div>
-                    <a class="logged-in">
-                        <a href="https://msis.msdr.org/DTD/">Click here to go the the Student Events Database.</a>
-                    </a>
+                    
+                    <a class="logged-in" href="https://msis.msdr.org/DTD/">Click here to go the the Student Events Database.</a>
                     
                     <a class="sr-only sr-only-focusable" href="#pageURL###sideNav">Return to Side Navigation</a>
                     <hr/>   

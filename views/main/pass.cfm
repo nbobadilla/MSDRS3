@@ -1,13 +1,22 @@
 <!--- For styling, visit:  https://getbootstrap.com/docs/4.3/components/alerts/ --->
 
 <!--- Add page index to make back-to-top and hashtags work --->
-<cfset pageURL = '/main/page-name.cfm'>
+<cfset pageURL = '/main/pass.cfm'>
 <cfoutput>
-    <div class="container pt-3">
+    <div class="container-fluid pt-3 pb-4">
         <div class="row">
-            <!--- Content goes here. use bootstrap v4.3 column classes for desired column spacing. example here is 4 column --->
-            <!--- For column classes help, visit https://getbootstrap.com/docs/4.3/layout/grid/ --->
-            <div class="col-lg-12">
+            <div class="col-lg-2">
+                <nav class="nav flex-column mb-3 sticky-top sticky-padding rounded" id="sideNav">
+                    <a class="nav-link text-secondary" href="#pageURL###pass">PASS</a>
+                    <a class="nav-link text-secondary" href="#pageURL###title1">Log In</a>
+                    <a class="nav-link text-secondary" href="#pageURL###title2">Awards (Coming Soon)</a>
+                    <a class="nav-link text-secondary" href="#pageURL###title3">Resources (Coming Soon)</a>
+                    <!---- Add links with nav-link class like the example above this comment--->
+                    <a aria-hidden="true" class="nav-link d-none d-lg-block text-secondary" href="#pageURL###body">Back to Top</a>
+                </nav>
+            </div>
+            <div class="col-lg-10" id="mainContent">
+                <div id="pass" class="scroll-anchor" aria-hidden="true"></div>
                 
                 <h2>Portable Assisted Study Sequence (PASS)</h2>
                 <p>
@@ -33,6 +42,7 @@
                 </div>
                 <cfset redirect="PASS">
                 <cfinclude  template="/layouts/log-in.cfm">
+                <a class="sr-only sr-only-focusable" href="#pageURL###sideNav">Return to Side Navigation</a>
             </div>
         </div>
     </div>

@@ -3,7 +3,7 @@
 <cfparam name="status" default="">
 
 <!--- Add page index to make back-to-top and hashtags work --->
-<cfset pageURL = '/main/online-registration.cfm'>
+<cfset pageURL = '/main/exhibitor-registration.cfm'>
 <cfoutput>
     <div class="container pt-3">
         <div class="row">
@@ -38,7 +38,7 @@
                 <p>
                     <a href="/main/attendee-registration.cfm">Click here to register as an <strong>Attendee</strong></a>
                 </p>
-                <form class="mb-5 p-4 border rounded bg-light" method="post" name="attendeeInfo">
+                <form class="mb-5 p-4 border rounded bg-light" action="http://msis.msdr.org/news-events/webservice/confirmation.cfm" method="post" id="attendeeInfo" name="attendeeInfo">
                     <input name="event" type="hidden" value="183">
                     <input name="referer" type="hidden" value="index">
                     <input name="title" type="hidden" value="Exhibitor">

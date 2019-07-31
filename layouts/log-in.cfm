@@ -25,7 +25,7 @@
     </form>--->
     <div id="log-in" class="scroll-anchor"></div>
     
-    <div class="card bg-light m-5">
+    <div class="card bg-light">
         <div class="card-header bg-info text-white">
             Log In <small class="text-secondary float-right text-light" aria-hidden="true">#redirect#</small>
         </div>
@@ -44,9 +44,9 @@
                 <div class="form-group">
                     <cfif redirect EQ 'PASS'>
                         <input type="hidden" name="newLogin" value="Y">
-                        <label for="email">Username</label>
+                        <label for="email">Email or Username</label>
                     
-                        <input type="text" class="form-control" id="email" placeholder="Username"></input>
+                        <input type="text" class="form-control" id="email" placeholder="Email or Username"></input>
                     <cfelse>
                         <label for="email">Email</label>
                         <input type="email" class="form-control" id="email" name="fUsername" placeholder="Email"></input>

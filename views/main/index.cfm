@@ -17,7 +17,7 @@
                 </a>
             </div>--->
             <div></div>
-            <div class="carousel-item active" data-interval="20000">
+            <div class="carousel-item active" data-interval="20000" style="height: 500px">
                 <img src="includes/images/cherries-crop-low.jpg" class="d-block w-100" alt="Picture of Rainier Cherries in a bag"/>
                 <div class="carousel-caption d-none d-md-block rounded bg-info p-3">
                     <h2>Welcome to MSDRS</h2>
@@ -40,7 +40,7 @@
                     </p>
                 </div>
             </div>
-            <div class="carousel-item" data-interval="20000">
+            <div class="carousel-item" data-interval="20000" style="height: 500px">
                 <img src="includes/images/fields-crop-low.jpg" class="d-block w-100" alt="Picture of fields"/>
                 <div class="carousel-caption d-none d-md-block rounded bg-info p-3">
                     <h2>Migrant Student Information System</h2>
@@ -59,7 +59,7 @@
                     </p><!------>
                 </div>
             </div>
-            <div class="carousel-item" data-interval="20000">
+            <div class="carousel-item" data-interval="20000" style="height: 500px">
                 <img src="includes/images/graduates-crop-low.jpg" class="d-block w-100" alt="Picture of Graduates throwing their caps in the air"/>
                 <div class="carousel-caption d-none d-md-block rounded bg-info p-3">
                     <h2>Rights of Children Enrolled in School</h2>

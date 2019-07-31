@@ -18,7 +18,8 @@
                 </p>
                 <p>
                     The Migrant Student Data, Recruitment and Support (MSDRS) student records are protected by the 
-                    Family Educational Rights and Privacy Act (FERPA), federal regulations which assign rights to students 
+                    <a href="#link('FERPA')#">Family Educational Rights and Privacy Act (FERPA)</a>, 
+                    federal regulations which assign rights to students 
                     and responsibilities to educational institutions regarding student's education records. 
                     The Act governs the maintenance and release of information from those records.
                 </p>
@@ -94,3 +95,106 @@
         </div>
     </div>
 </cfoutput>
+
+<script>
+    $.ajax({
+
+        url: "https://msis.msdr.org/web_services/districtDirectory.cfc",
+
+        type:"get",
+
+        dataType: "jsonp",
+
+        jsonpCallback:"cb",
+
+        data: { method:"getDirectoryJSONP" }
+
+    });
+    function cb(resp){
+
+        var districts = [];
+
+        distObj = [];
+
+        $.each(resp.DATA, function(i, el){
+
+            if($.inArray(el[0], districts) === -1){
+
+            districts.push(el[0])
+
+            distObj.push({district: el[0], distid : el[1]})
+
+            };
+
+        });
+
+        $('#district').append('<optgroup label=""></optgroup>');
+
+        $('#district').append('<optgroup label="Project Agencies">');
+
+        $.each(distObj, function (i, dist) {
+
+            $('#district').append($('<option>', {
+
+                value: dist.distid,
+
+                text : dist.district
+
+            }));
+
+        });
+
+        $('#district').append('</optgroup>');
+
+    }
+    $.ajax({
+
+        url: "https://msis.msdr.org/web_services/districtDirectory.cfc",
+
+        type:"get",
+
+        dataType: "jsonp",
+
+        jsonpCallback:"callback",
+
+        data: { method:"getNonDistrictDirectoryJSONP" }
+
+    });
+    function callback(resp){
+
+        var districts = [];
+
+        distObj = [];
+
+        $.each(resp.DATA, function(i, el){
+
+            if($.inArray(el[0], districts) === -1){
+
+            districts.push(el[0])
+
+            distObj.push({district: el[0], distid : el[1]})
+
+            };
+
+        });
+
+        $('#district').append('<optgroup label=""></optgroup>');
+
+        $('#district').append('<optgroup label="Non Project Agencies">');
+
+        $.each(distObj, function (i, dist) {
+
+            $('#district').append($('<option>', {
+
+                value: dist.distid,
+
+                text : dist.district
+
+            }));
+
+        });
+
+        $('#district').append('</optgroup>');
+
+    }
+</script>
