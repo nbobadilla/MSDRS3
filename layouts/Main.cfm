@@ -10,7 +10,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!---Base URL Might Need to Remove this--->
-	<base href="#event.getHTMLBaseURL()#" />
+	<cfif cgi.server_name EQ "d392p91qz0iqre.cloudfront.net" OR cgi.server_name EQ "ada.msdr.org">
+		<base href="https://#cgi.server_name#/" />
+	<cfelse>
+		<base href="#event.getHTMLBaseURL()#" />
+	</cfif>
 
 	<!--- JS ---> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
