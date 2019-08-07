@@ -82,6 +82,11 @@
 			color: ##f8f9fa;
 			text-decoration: none;
 		}
+
+		.logged-in, .pass-in{
+			display: none;
+		}
+
 		.sticky-padding{
 			top: 72px !important;
 		}
@@ -211,8 +216,14 @@
 				<input class="form-control mr-sm-2 my-2 my-sm-0 bg-transparent text-light border-white" type="Password" placeholder="Password" name="fPassword" aria-label="Log in Password">
 				<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Log In</button>
 			</form>
-			<div id="msis-link" class="navbar-nav logged-in" style="display: none;" aria-hidden="true">
+			<!---<div class="navbar-nav pass-in border-right" aria-hidden="true">
+				<a class="nav-item nav-link" href="https://msis.msdr.org/wapass123/main.cfm">Return to PASS</a>
+			</div>--->
+			<div id="msis-link" class="navbar-nav logged-in border-right" aria-hidden="true">
 				<a class="nav-item nav-link" href="http://msis.msdr.org/msis/searchscreen/index.cfm">Return to MSIS</a>
+			</div>
+			<div class="navbar-nav logged-in" aria-hidden="true">
+				<a class="nav-item nav-link" href="https://msis.msdr.org/scripts/logout.cfm">Log Out</a>
 			</div>
 			<!---
 			<div class="navbar-nav">
@@ -258,7 +269,7 @@
 						
 						<a href="/main/attendee-registration.cfm">State MEP Conference <span class="badge badge-warning">Register Now!</span></a>
 						<a href="/">Home</a>
-						<a href="/main/log-in.cfm?redirect=FER"><abbr title="Federal Education Review" aria-label="Federal Education Review">FER</abbr> Scheduler</a>
+						<a href="/main/log-in.cfm?redirect=FER"><abbr title="Family Eligibility Review" aria-label="Family Eligibility Review">FER</abbr> Scheduler</a>
 						<a href="http://health.msdr.org/">Health Program</a>
 						<a href="/main/news-events.cfm"><abbr title="Migrant Education Program" aria-label="Migrant Education Program">MEP</abbr> Events</a>
 						<a href="/main/pass.cfm">PASS</a>
@@ -341,6 +352,14 @@
 			else{
 				$('.logged-out').show();
 				$('.logged-in').hide();
+			};
+			if(decodeURIComponent(getCookie('PASSCOOKIE')) != ""){
+				$('.pass-in').show();
+				$('.pass-out').hide();
+			}
+			else{
+				$('.pass-out').show();
+				$('.pass-in').hide();
 			};
 			/*$(["/"]).each(
 			function(index, value){

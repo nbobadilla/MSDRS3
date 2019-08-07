@@ -40,13 +40,14 @@
             <p class="card-text">
                 Log In to access this content.
             </p>
-            <form <cfif redirect EQ 'PASS'>action="http://msis.msdr.org/wapass123/main.cfm"<cfelse>action="https://msis.msdr.org/scripts/_checkLogin.cfm"</cfif> method="post">
+            <form action="https://msis.msdr.org/scripts/_checkLogin.cfm" method="post">
+                <input type="hidden" name="redirect" value="#redirect#">
                 <div class="form-group">
                     <cfif redirect EQ 'PASS'>
                         <input type="hidden" name="newLogin" value="Y">
                         <label for="email">Email or Username</label>
                     
-                        <input type="text" class="form-control" id="email" placeholder="Email or Username"></input>
+                        <input type="text" class="form-control" id="email" name="fUsername" placeholder="Email or Username"></input>
                     <cfelse>
                         <label for="email">Email</label>
                         <input type="email" class="form-control" id="email" name="fUsername" placeholder="Email"></input>

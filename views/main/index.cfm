@@ -106,14 +106,17 @@
     <div class="container-fluid" id="mainContent">
         <div class="row mt-3">
             <div class="col-lg-3">
-                <h3><abbr title="Federal Education Review" aria-label="Federal Education Review">FER</abbr> Scheduler</h3>
+                <h3><abbr title="Family Eligibility Review" aria-label="Family Eligibility Review">FER</abbr> Scheduler</h3>
                 <p>
-                    The Federal Examination Review Scheduler helps plan and track meetings with Migrant Families 
-                    to create Certificates of Eligibilty. An MSIS account is required to access the
+                    The Family Eilgibility Review Scheduler helps plan and track federally required re-interviews with Migrant Families. 
+                    An MSIS account is required to access the
                     FER Scheduler.
                 </p>
                 <p>
-                    <a class="btn btn-outline-primary my-2 my-sm-0" href="/main/log-in.cfm?redirect=FER" role="button">Log In</a>
+                    <a class="btn btn-outline-primary my-2 logged-out" href="/main/log-in.cfm?redirect=FER" role="button">Log In</a>
+                    <span class="logged-in">
+                        <a class="btn btn-outline-primary my-2" href="https://msis.msdr.org/msis/scheduler/index.cfm" role="button">FER Scheduler</a>
+                    </span>
                 </p>
             </div>
             <div class="col-lg-3">
@@ -124,19 +127,23 @@
                     potential.
                 </p>
                 <p>
-                    <a class="btn btn-outline-primary my-2 my-sm-0" href="http://health.msdr.org/" role="button">Learn More</a>
-                    <a class="btn btn-outline-primary my-2 my-sm-0" href="https://msis.msdr.org/health/provider.cfm" role="button">Log In</a>
+                    <a class="btn btn-outline-primary my-2" href="http://health.msdr.org/" role="button">Learn More</a>
+                    <a class="btn btn-outline-primary my-2" href="https://msis.msdr.org/health/provider.cfm" role="button">Log In</a>
                 </p>
             </div>
             <div class="col-lg-3">
                 <h3><abbr title="Migrant Education Program" aria-label="Migrant Education Program">MEP</abbr> Events</h3>
                 <p>
-                    The Washington State Migrant Education Program (WAMEP) is proud to offer special engagement and learning events 
+                    The Washington State Migrant Education Program is proud to offer special engagement and learning events 
                     for migrant students, parents, and district staff.
                 </p>
                 <p>
-                    <a class="btn btn-outline-primary my-2 my-sm-0" href="/main/news-events.cfm" role="button">Learn More</a>
-                    <!---<a class="btn btn-outline-primary my-2 my-sm-0" href="/main/news-events.cfm##log-in" role="button">Log In</a>--->
+                    <a class="btn btn-outline-primary my-2" href="/main/news-events.cfm" role="button">Learn More</a>
+                    <a class="btn btn-outline-primary my-2 logged-out" href="/main/news-events.cfm##log-in" role="button">Log In</a>
+                    <span class="logged-in">
+                        <a class="btn btn-outline-primary my-2" href="https://msis.msdr.org/DTD/" role="button">Events Database</a>
+                    </span>
+                    <!------>
                 </p>
             </div>
             <div class="col-lg-3">
@@ -147,7 +154,10 @@
                 </p>
                 <p>
                     <a class="btn btn-outline-primary my-2 my-sm-0" href="/main/pass.cfm" role="button">Learn More</a>
-                    <!---<a class="btn btn-outline-primary my-2 my-sm-0" href="/main/pass.cfm##log-in" role="button">Log In</a>--->
+                    <a class="btn btn-outline-primary my-2 my-sm-0 pass-out" href="/main/pass.cfm##log-in" role="button">Log In</a>
+                    <span class="pass-in">
+                        <a class="btn btn-outline-primary my-2" href="https://msis.msdr.org/wapass123/main.cfm" role="button">PASS</a>
+                    </span><!------>
                 </p>
             </div>
             

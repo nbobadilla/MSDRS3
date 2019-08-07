@@ -8,7 +8,7 @@
             <div class="col-lg-2">
                 <nav class="nav flex-column mb-3 sticky-top sticky-padding rounded" id="sideNav">
                     <a class="nav-link text-secondary" href="#pageURL###pass">PASS</a>
-                    <a class="nav-link text-secondary" href="#pageURL###title1">Log In</a>
+                    <a class="nav-link text-secondary" href="#pageURL###log-in">Log In</a>
                     <a class="nav-link text-secondary" href="#pageURL###title2">Awards (Coming Soon)</a>
                     <a class="nav-link text-secondary" href="#pageURL###title3">Resources (Coming Soon)</a>
                     <!---- Add links with nav-link class like the example above this comment--->
@@ -34,14 +34,21 @@
                     This database contains confidential information intended exclusively for the educator accessing 
                     PASS student and course information and for educational purposes. 
                     Confidentiality of student-specific information contained in the ‘PASS Online’ database is protected by 
-                    Federal law through the Family Educational Rights and Privacy Act (FERPA) and the 
+                    Federal law through the 
+                    <a href="#link('FERPA')#">Family Educational Rights and Privacy Act (FERPA)</a> 
+                    and the 
                     Protection of Pupil Rights Amendment (PPRA) (20 USC 1232g). 
                     Users are reminded that the password they have received to access student, course and 
                     Program information through the ‘PASS Online’ database is for their use only, 
                     and not to be shared with others.
                 </div>
                 <cfset redirect="PASS">
-                <cfinclude  template="/layouts/log-in.cfm">
+                <div class="pass-out">
+                    <cfinclude  template="/layouts/log-in.cfm">
+                </div>
+                <div class="pass-in mt-4" role="alert">
+                    <a class="alert alert-info" href="https://msis.msdr.org/wapass123/main.cfm">Click here to go to the PASS Home page.</a>
+                </div>
                 <a class="sr-only sr-only-focusable" href="#pageURL###sideNav">Return to Side Navigation</a>
             </div>
         </div>
