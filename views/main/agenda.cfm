@@ -9,8 +9,8 @@
             <!--- For column classes help, visit https://getbootstrap.com/docs/4.3/layout/grid/ --->
             <div class="col-lg-12">
                 
-                <h2>Column 1</h2>
-                
+                <h2>Coming Soon!</h2>
+                <p>We will update this page shortly.</p>
             </div>
         </div>
     </div>

@@ -32,114 +32,93 @@
                     <cfset redirect="Resources">
                     <cfinclude  template="/layouts/log-in.cfm">
                 </div>
-                <div class="logged-in row" style="display: none;" aria-hidden="true">
+                <div class="logged-in" aria-hidden="true">
+                    <div class="row">
                     <div class="col-lg">
                         <div class="d-flex flex-column pb-4">
                             <h4>Definitions</h4>
+                            <a class="p-1"  href="#link('FERPA')#">Family Educational Rights and Privacy Act (FERPA)</a>
                             <a class="p-1"  href="#link('PFSDefinition')#">Priority for Service (PFS) Definition</a>
-                            <a class="p-1"  href="link">Supplemental Service Definitions</a>
+                            <a class="p-1"  href="#link('MEPSUPDEF')#">Supplemental Service Definitions</a>
                         </div>
-                    <!---</div>
-                    <div class="col-lg">--->
                         <div class="d-flex flex-column pb-4">
                             <h4>Federal Programs Director (FPD)</h4>
-                            <a class="p-1"  href="link">USDA Establishing Migrant Eligibility (November 2004)</a>
-                            <a class="p-1"  href="link">USDA Migrant Free Lunch Eligibility (August 2004)</a>
-                            <a class="p-1"  href="link">OSPI Free Lunch Memo (December 2005)</a>
+                            <a class="p-1"  href="#link('ESTABLUNCH')#">USDA Establishing Migrant Eligibility (November 2004)</a>
+                            <a class="p-1"  href="#link('FREELUNCH')#">USDA Migrant Free Lunch Eligibility (August 2004)</a>
+                            <a class="p-1"  href="#link('OSPILUNCH')#">OSPI Free Lunch Memo (December 2005)</a>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="col-lg">
+                        <div class="d-flex flex-column pb-4">
+                            <h4>Job Descriptions</h4>
+                            <a class="p-1"  href="#link('MGS')#">Graduation Specialist</a>
+                            <a class="p-1"  href="#link('RCJOB')#">Records Clerk</a>
+                            <a class="p-1"  href="#link('RTJOB')#">Recruiter</a>
+                            <a class="p-1"  href="#link('MSAJOB')#">Student Advocate</a>
                         </div>
                         <div class="d-flex flex-column pb-4">
                             <h4>Maps</h4>
-                            <a class="p-1"  href="link">All Districts</a>
-                            <a class="p-1"  href="link">Non-Project Districts</a>
-                            <a class="p-1"  href="link">Project Districts</a>
+                            <a class="p-1 disabled"  >All Districts</a>
+                            <a class="p-1 disabled"  >Non-Project Districts</a>
+                            <a class="p-1 disabled"  >Project Districts</a>
                         </div>
-                        <div class="d-flex flex-column pb-4">
-                            <h4>Job Descriptions</h4>
-                            <a class="p-1"  href="link">Graduation Specialist</a>
-                            <a class="p-1"  href="link">Records Clerk</a>
-                            <a class="p-1"  href="link">Recruiter</a>
-                            <a class="p-1"  href="link">Student Advocate</a>
-                        </div>
-                    <!---</div>
-                    <div class="col-lg">--->
-                        
-                    </div>
-                    <div class="col-lg">
-                        
-                    <!---</div>
-                    <div class="col-lg">--->
-                        
                         <div class="d-flex flex-column pb-4">
                             <h4>Records Clerk</h4>
-                            <a class="p-1"  href="link">MSIS Handbook</a>
-                            <a class="p-1"  href="link">MSIS Reports Booklet</a>
+                            <a class="p-1"  href="#link('PLANNER')#">MSDRS Planner</a>
+                            <a class="p-1"  href="#link('RRREQUIRE')#">MSIS and ID&R Record Retention Requirements</a>
+                            <a class="p-1"  href="#link('RCBOOK')#">MSIS Handbook</a>
+                            <a class="p-1"  href="#link('REPORTSBOOK')#">MSIS Reports Booklet</a>
                         </div>
+                    </div>
+                    <div class="col-lg">
                         <div class="d-flex flex-column pb-4">
                             <h4>Recruiter</h4>
-                            <a class="p-1"  href="link">Challenged COE Form</a>
-                            <a class="p-1"  href="link">Elligibility Certification (COE)</a>
-                            <a class="p-1"  href="link">Have You Recently Moved?</a>
-                            <a class="p-1"  href="link">Home and Private School Form</a>
-                            <a class="p-1"  href="link">Home and Private School Form (Spanish)</a>
-                            <a class="p-1"  href="link">ID&R Handbook</a>
-                            <a class="p-1"  href="link">Individual MEP Recruiter Plan</a>
-                            <a class="p-1"  href="link">Migrant Recruiter Log Form</a>
-                            <a class="p-1"  href="link">Qualifying Activities and Crops</a>
-                            <a class="p-1"  href="link">Qualifying Moves and MEP Eligibilty Criteria Handouts</a>
-                            <a class="p-1"  href="link">Qualifying Moves for the MEP (Video)</a>
-                            <a class="p-1"  href="link">Recruiters Guide to Determine Eligibilty</a>
-                            <a class="p-1"  href="link">Reference Guide for COE Completion</a>
-                            <a class="p-1"  href="link">Washington State Licensed Farm Labor Contractors</a>
-                            <a class="p-1"  href="link">Washington Temporary Farm Worker Housing</a>
+                            <a class="p-1"  href="#link('CHALLCOE')#">Challenged COE Form</a>
+                            <a class="p-1"  href="#link('COE')#">Elligibility Certification (COE)</a>
+                            <a class="p-1"  href="#link('UMOVE')#">Have You Recently Moved?</a>
+                            <a class="p-1"  href="#link('HSFORM')#">Home and Private School Form</a>
+                            <a class="p-1"  href="#link('HSFORMSPAN')#">Home and Private School Form (Spanish)</a>
+                            <a class="p-1"  href="#link('RTBOOK')#">ID&R Handbook</a>
+                            <a class="p-1"  href="#link('RTPLAN')#">Individual MEP Recruiter Plan</a>
+                            <a class="p-1"  href="#link('rclog')#">Migrant Recruiter Log Form</a>
+                            <a class="p-1"  href="#link('qualcrop')#">Qualifying Activities and Crops</a>
+                            <a class="p-1"  href="#link('RTHD')#">Qualifying Moves and MEP Eligibilty Criteria Handouts</a>
+                            <a class="p-1"  href="#link('RTVIDEO')#">Qualifying Moves for the MEP (Video)</a>
+                            <a class="p-1"  href="#link('rcguide')#">Recruiters Guide to Determine Eligibilty</a>
+                            <a class="p-1"  href="#link('REFGUIDE')#">Reference Guide for COE Completion</a>
+                            <a class="p-1"  href="#link('FARMLABOR')#">Washington State Licensed Farm Labor Contractors</a>
+                            <a class="p-1"  href="#link('FARMHOUSE')#">Washington Temporary Farm Worker Housing</a>
                         </div>
-                    <!---</div>
-                    <div class="col-lg">--->
-                        <!---<div class="d-flex flex-column pb-4">
-                            <h4>Out of School Youth (OSY)</h4>
-                            <a class="p-1"  href="link">Brochure (Clark, Cowlitz, and Thurston Counties)</a>
-                            <a class="p-1"  href="link">Brochure (Grant and Ferry Counties)</a>
-                            <a class="p-1"  href="link">Brochure (Grays Harbor, Kitsap, and Mason Counties)</a>
-                            <a class="p-1"  href="link">Brochure (Kittitas County)</a>
-                            <a class="p-1"  href="link">Brochure (King and Pierce Counties)</a>
-                            <a class="p-1"  href="link">Brochure (Skagit County)</a>
-                            
-                            <a class="p-1"  href="link">Brochure (Walla Walla County)</a>
-                            <a class="p-1"  href="link">Brochure (Whatcom County)</a>
-                            <a class="p-1"  href="link">Brochure (Yakima County)</a>
-                        </div> --->
                     </div>
                     
                     <div class="col-lg">
-                        
-                    <!---</div>
-                    <div class="col-lg">--->
-                        
                         <div class="d-flex flex-column pb-4">
                             <h4>Helpful Resources</h4>
-                            <a class="p-1"  href="link">Brochure (Clark, Cowlitz, and Thurston Counties)</a>
-                            <a class="p-1"  href="link">Brochure (Grant and Ferry Counties)</a>
-                            <a class="p-1"  href="link">Brochure (Grays Harbor, Kitsap, and Mason Counties)</a>
-                            <a class="p-1"  href="link">Brochure (Kittitas County)</a>
-                            <a class="p-1"  href="link">Brochure (King and Pierce Counties)</a>
-                            <a class="p-1"  href="link">Brochure (Skagit County)</a>
+                            <a class="p-1"  href="#link('THURSTONBRO')#">Brochure (Clark, Cowlitz, and Thurston Counties)</a>
+                            <a class="p-1"  href="#link('GRANTBRO')#">Brochure (Grant and Ferry Counties)</a>
+                            <a class="p-1"  href="#link('GRAYSBRO')#">Brochure (Grays Harbor, Kitsap, and Mason Counties)</a>
+                            <a class="p-1"  href="#link('KITTITASBRO')#">Brochure (Kittitas County)</a>
+                            <a class="p-1"  href="#link('PIERCEBRO')#">Brochure (King and Pierce Counties)</a>
+                            <a class="p-1"  href="#link('SKAGITBRO')#">Brochure (Skagit County)</a>
                             
-                            <a class="p-1"  href="link">Brochure (Walla Walla County)</a>
-                            <a class="p-1"  href="link">Brochure (Whatcom County)</a>
-                            <a class="p-1"  href="link">Brochure (Yakima County)</a>
+                            <a class="p-1"  href="#link('WALLABRO')#">Brochure (Walla Walla County)</a>
+                            <a class="p-1"  href="#link('WHATCOMBRO')#">Brochure (Whatcom County)</a>
+                            <a class="p-1"  href="#link('YAKIMABRO')#">Brochure (Yakima County)</a>
                             <a class="p-1"  href="#link('IDRPLAN')#">District Identifcation & Recruitment (ID&R) Plan</a>
-                            <a class="p-1"  href="#link('FERPA')#">Family Educational Rights and Privacy Act (FERPA)</a>
-                            <a class="p-1"  href="link">History of MEP</a>
+                            
+                            <a class="p-1"  href="#link('MEPMAC')#">History of MEP</a>
                             <a class="p-1"  href="#link('MEPEligCriteria')#">MEP Eligibility Criteria</a>
                             <a class="p-1"  href="#link('MEPGuidance')#">MEP Guidance</a>
-                            <a class="p-1"  href="link">Migrant Physical and Dental Exams</a>
-                            <a class="p-1"  href="link">MSDRS Planner</a>
-                            <a class="p-1"  href="link">MSIS and ID&R Record Retention Requirements</a>
-                            <a class="p-1"  href="link">Quality Control Policies and Procedures</a>
-                            <a class="p-1"  href="link">Referred Services Form</a>
+                            <a class="p-1"  href="#link('physical')#">Migrant Physical and Dental Exams</a>
+                            
+                            <a class="p-1"  href="#link('POLICIES')#">Quality Control Policies and Procedures</a>
+                            <!---<a class="p-1"  href="link">Referred Services Form</a>--->
                             
                         </div>
                     </div>
-                    
+                    </div>
                 </div>
                 <!---<div class="logged-out row" style="display: none;">
                     <div class="col">

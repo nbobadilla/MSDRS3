@@ -53,7 +53,7 @@
 			/*position: relative;*/
 		}
 		.bg-alert a {
-			color: rgba(255, 255, 255, 0.8) !important;
+			color: rgba(255, 255, 255, 0.9) !important;
 		}
 		.bg-alert a:hover {
 			color: white !important;
@@ -171,9 +171,14 @@
 
 <body id="body">
 	<a class="sr-only sr-only-focusable" href="#pageURL###mainBody">Skip Navigation</a>
+	<!---Top Alert Bar--->
 	<div id="nav-alert" class="bg-alert p-3">
-		<a href="/main/attendee-registration.cfm" class="ml-5 pl-3 text-decoration-none">
-			Click here to register for the 2019 Washington State Migrant Education Program Conference.
+		<a href="/main/news-events.cfm##conference" class="ml-5 pl-3 text-decoration-none">
+			<!---Click here to register for the 2019 Washington State Migrant Education Program Conference.--->
+			Thank you to all who registered to attend the State MEP Conference. 
+            We have reached registration capacity. If you have any questions regarding onsite registration options, 
+            please contact: <strong>Elizabeth Ramos</strong> at (509) 837-2712 or eramos@msdr.org.
+            Conference Agenda will be posted shortly.
 		</a>
 	</div>
 	<nav id="mainNav" class="navbar sticky-top navbar-expand-custom navbar-dark bg-secondary shadow-sm">
@@ -260,9 +265,10 @@
 				<div class="col-lg-3">
 					<h6>Visit Us</h6>
 					<p>810-B East Custer Avenue<br/>
-					Sunnyside <abbr title="Washington" aria-label="Washington">WA</abbr>, 98944<br/><br/>
-					<Strong>Office Hours:</Strong> 8:00 AM – 5:00 PM<br/>
-					<a href="https://goo.gl/maps/cyaDEFHP3TpgPSAj6" target="_blank">Google Maps</a>
+					Sunnyside <abbr title="Washington" aria-label="Washington">WA</abbr>, 98944<br/>
+					<a href="https://goo.gl/maps/cyaDEFHP3TpgPSAj6" target="_blank">Google Maps</a><br/><br/>
+					<Strong>Office Hours:</Strong> 8:00 AM – 5:00 PM
+					
 					
 					
 					</p>
@@ -271,7 +277,7 @@
 					<h6>Navigation</h6>
 					<p class="d-flex flex-column">
 						
-						<a href="/main/attendee-registration.cfm">State MEP Conference <span class="badge badge-warning">Register Now!</span></a>
+						<a href="/main/news-events.cfm##conference">State MEP Conference <span class="badge badge-warning">Registration Closed</span></a>
 						<a href="/">Home</a>
 						<a href="/main/log-in.cfm?redirect=FER"><abbr title="Family Eligibility Review" aria-label="Family Eligibility Review">FER</abbr> Scheduler</a>
 						<a href="http://health.msdr.org/">Health Program</a>

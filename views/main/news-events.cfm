@@ -12,11 +12,11 @@
                     <a class="nav-link text-secondary" href="#pageURL###title2">Student Events Database</a>
                     <a class="nav-link text-secondary" href="#pageURL###title3">Dare to Dream</a>
                     <a class="nav-link text-secondary" href="#pageURL###title5">Voices from the Field</a>
-                    <a class="nav-link text-secondary" href="#pageURL###title4">WA MEP Conference 2019 <span class="badge badge-warning">Register Now!</span></a>
+                    <a class="nav-link text-secondary" href="#pageURL###conference">WA MEP Conference 2019 <span class="badge badge-warning">Registion Closed</span></a>
                     <nav class="nav flex-column rounded ml-4">
-                        <a class="nav-link text-secondary" href="/main/agenda.cfm">Agenda</a>
-                        <a class="nav-link text-secondary" href="/main/attendee-registration.cfm">Attendee Registration</a>
-                        <a class="nav-link text-secondary" href="/main/exhibitor-registration.cfm">Exhibitor Registration</a>
+                        <a class="nav-link text-secondary" href="/main/agenda.cfm">Agenda (Coming Soon)</a>
+                        <!---<a class="nav-link text-secondary" href="/main/attendee-registration.cfm">Attendee Registration</a>
+                        <a class="nav-link text-secondary" href="/main/exhibitor-registration.cfm">Exhibitor Registration</a>--->
                     </nav>
                     <!---- Add links with nav-link class like the example above this comment--->
                     <a aria-hidden="true" class="nav-link d-none d-lg-block text-secondary" href="#pageURL###body">Back to Top</a>
@@ -88,9 +88,9 @@
                     <a class="sr-only sr-only-focusable" href="#pageURL###sideNav">Return to Side Navigation</a> 
                     <hr/> 
                 </div>
-                <div id="title5" class="scroll-anchor" aria-hidden="true"></div>
+                <div id="conference" class="scroll-anchor" aria-hidden="true"></div>
                 <div>
-                    <h2>Washington State Migrant Education Program Conference 2019 <small class="badge badge-warning">Register Now!</small></h2>
+                    <h2>Washington State Migrant Education Program Conference 2019 <small class="badge badge-warning">Registion Closed</small></h2>
                     <!--- Content goes here. --->
                     
                     <p>
@@ -101,11 +101,17 @@
                         <strong>When:</strong> August 15 – 16, 2019<br/>
                         <strong>Where:</strong> Yakima Convention Center 10 N 8th St, Yakima, WA 98901
                     </p>
-                    <p class="d-flex flex-column">
+                    <div class="alert alert-warning" role="alert">
+                        Thank you to all who registered to attend the State MEP Conference. 
+                        We have reached registration capacity. If you have any questions regarding onsite registration options, 
+                        please contact: <strong>Elizabeth Ramos</strong> at (509) 837-2712 or eramos@msdr.org.
+                        Conference Agenda will be posted shortly.
+                    </div>
+                    <!---<p class="d-flex flex-column">
                         <a href="/main/attendee-registration.cfm" class="p-1">Click here to register as an <strong>Attendee</strong></a>
                         <a href="/main/exhibitor-registration.cfm" class="p-1">Click here to register as an <strong>Exhibitor</strong></a>
 
-                    </p>
+                    </p>--->
                     <a class="sr-only sr-only-focusable" href="#pageURL###sideNav">Return to Side Navigation</a>
                       
                 </div>
