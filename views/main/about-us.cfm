@@ -53,7 +53,7 @@
                         and preschool agencies to contact MSDRS staff when additional assistance is needed.
                     </p>
                     <p>
-                        <a href="##">Click here to request access to MSIS.</a>
+                        <a href="/main/request-account.cfm">Click here to request access to MSIS.</a>
                     </p>
                     <h4>Records Clerk Training</h4>
                     <p>
@@ -65,7 +65,7 @@
                     </p> 
                     <p>
                         For more information or if you would like to request that a Records Clerk training be conducted in your district, 
-                        please contact <a href="##">Lisa Schlenker</a>
+                        please contact <a href="mailto:lschlenker@msdr.org">Lisa Schlenker</a>
                     </p>
                     <a class="sr-only sr-only-focusable" href="#pageURL###sideNav">Return to About Us Navigation</a>
                     <hr/>
@@ -92,7 +92,7 @@
                     </p>
                     <p>
                         For more information or if you would like to request that 
-                        a Recruiter training be conducted in your district, please contact <a href="##">Lisa Schlenker</a>
+                        a Recruiter training be conducted in your district, please contact <a href="mailto:lschlenker@msdr.org">Lisa Schlenker</a>
                     </p>
                     <a class="sr-only sr-only-focusable" href="#pageURL###sideNav">Return to About Us Navigation</a>
                     <hr/>
@@ -117,7 +117,7 @@
                         Grade reports and transcripts are issued. 
                     </p>
                     <p>
-                        To find out how to implement PASS at your school, please contact <a href="##">Heather Garcia-Mendoza</a>
+                        To find out how to implement PASS at your school, please contact <a href="mailto:hmendoza@msdr.org">Heather Garcia-Mendoza</a>
                     </p>
                     <p>    
                         <a href="/main/pass.cfm">
@@ -135,79 +135,79 @@
                     </h4>
                     <p>
                         Director<br/>
-                        <a href="##">Lionel Campos</a>
+                        <a href="mailto:lcampos@msdr.org">Lionel Campos</a>
                     </p>
                     <p>
                         Administrative Assistant<br/>
-                        <a href="##">Denise Trautman</a>
+                        <a href="mailto:dtrautman@msdr.org">Denise Trautman</a>
                     </p>
                     <h4>
                         Office & Data Management Services (DMS)
                     </h4>
                     <p>
                         Office & Data Management Services Coordinator<br/>
-                        <a href="##">Lisa Schlenker</a>
+                        <a href="mailto:lschlenker@msdr.org">Lisa Schlenker</a>
                     </p>
                     <p>
                         Data Management Specialist/Trainer<br/>
-                        <a href="##">Bengie Aguilar</a><br/>
-                        <a href="##">Martha Jimenez</a><br/>
-                        <a href="##">Margaret Lopez</a><br/>
+                        <a href="mailto:baguilar@msdr.org">Bengie Aguilar</a><br/>
+                        <a href="mailto:mjimenez@msdr.org">Martha Jimenez</a><br/>
+                        <a href="mailto:mlopez@msdr.org">Margaret Lopez</a><br/>
                     </p>
                     <p>
                         Identification & Recruitment Trainer<br/>
-                        <a href="##">Eric Garza</a>
+                        <a href="mailto:egarza@msdr.org">Eric Garza</a>
                     </p>
                     <p>
                         Fiscal Specialist<br/>
-                        <a href="##">Alicia Champion</a>
+                        <a href="mailto:achampion@msdr.org">Alicia Champion</a>
                     </p>
                     <p>
                         Secretary<br/>
-                        <a href="##">Tina Mortensen</a>
+                        <a href="mailto:tmortensen@msdr.org">Tina Mortensen</a>
                     </p>
                     <h4>Migrant Student Information System (MSIS)</h4>
                     <p>
                         System Administrator<br/>
-                        <a href="##">Adrian Sanchez</a>
+                        <a href="mailto:asanchez@msdr.org">Adrian Sanchez</a>
                     </p>
                     <p>
                         Programmer/Systems Analyst<br/>
-                        <a href="##">Norberto Bobadilla</a><br/>
-                        <a href="##">Susan Copenhaver</a><br/>
-                        <a href="##">Steven Yager</a>
+                        <a href="mailto:nbobadilla@msdr.org">Norberto Bobadilla</a><br/>
+                        <a href="mailto:scopenhaver@msdr.org">Susan Copenhaver</a><br/>
+                        <a href="mailto:syager@msdr.org">Steven Yager</a>
                     </p>
                     <p>
                         Technical Assistant<br/>
-                        <a href="##">Alvina Ocegueda</a>
+                        <a href="mailto:aocegueda@msdr.org">Alvina Ocegueda</a>
                     </p>
                     <h4>Identification & Recruitment (ID&R)</h4>
                     <p>
                         Identification & Recruitment Coordinator<br/>
-                        <a href="##">Isral Hernandez</a>
+                        <a href="mailto:ihernandez@msdr.org">Isral Hernandez</a>
                     </p>
                     <p>
                         Recruiter<br/>
-                        <a href="##">Elsa Aranda</a><br/>
-                        <a href="##">Mary Rodriguez</a><br/>
-                        <a href="##">Minerva Rodriguez</a><br/>
-                        <a href="##">Natalie Palomarez</a><br/>
-                        <a href="##">Ramiro Segovia</a><br/>
-                        <a href="##">Valerea Cruz</a>
+                        <a href="mailto:earanda@msdr.org">Elsa Aranda</a><br/>
+                        <a href="mailto:mrodriguez@msdr.org">Mary Rodriguez</a><br/>
+                        <a href="mailto:minervar@msdr.org">Minerva Rodriguez</a><br/>
+                        <a href="mailto:npalomarez@msdr.org">Natalie Palomarez</a><br/>
+                        <a href="mailto:rsegovia@msdr.org">Ramiro Segovia</a><br/>
+                        <a href="mailto:vcruz@msdr.org">Valerea Cruz</a>
                     </p>
                     <h4>Student Support Services</h4>
                     <p>
                         Student Support Services Coordinator<br/>
-                        <a href="##">Heather Garcia-Mendoza</a><br/>
+                        <a href="mailto:hmendoza@msdr.org">Heather Garcia-Mendoza</a><br/>
                     </p>
                     <p>
                         Publication Specialist/Events Manager<br/>
-                        <a href="##">Elizabeth Ramos</a><br/>
+                        <a href="mailto:eramos@msdr.org">Elizabeth Ramos</a><br/>
                     </p>
                     <div id="secretary" class="scroll-anchor" aria-hidden="true"></div>
                     <p>
                         Secretary <br/>
-                        <a href="">Lilianna Sanchez</a><br/>
+                        <a href="mailto:lsanchez@msdr.org">Lilianna Sanchez</a><br/>
                     </p>
                     <a class="sr-only sr-only-focusable" href="#pageURL###sideNav">Return to About Us Navigation</a>
                 </div>
@@ -215,3 +215,9 @@
         </div>
     </div>
 </cfoutput>
+
+<script>
+    function showEmail(email){
+        $(this).text(email);
+    }
+</script>

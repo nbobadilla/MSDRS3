@@ -5,12 +5,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>MSDRS</title>
-	<meta name="description" content="ColdBox Application Template">
-	<meta name="author" content="Ortus Solutions, Corp">
+	<meta name="description" content="MSDRS Application Template">
+	<meta name="author" content="MSDRS">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!---Base URL Might Need to Remove this--->
-	<cfif cgi.server_name EQ "d392p91qz0iqre.cloudfront.net" OR cgi.server_name EQ "ada.msdr.org">
+	<cfif findNoCase(".cloudfront.net",cgi.server_name) GT 0 OR FindNoCase("www.msdr.org",cgi.server_name) GT 0>
 		<base href="https://#cgi.server_name#/" />
 	<cfelse>
 		<base href="#event.getHTMLBaseURL()#" />
@@ -35,9 +35,12 @@
 	</cfscript>
 	<!---CSS Styling to customize breakpoint of the nav bar and other Bootstrap styling extended--->
 	<style>
-	body{
-		font-weight: 300;
-	}
+		body{
+			font-weight: 300;
+		}
+		strong{
+			font-weight: bold
+		}
 		.navbar-expand-xl {
 			flex-flow: wrap !important;
 		}
@@ -178,7 +181,6 @@
 			Thank you to all who registered to attend the State MEP Conference. 
             We have reached registration capacity. If you have any questions regarding onsite registration options, 
             please contact: <strong>Elizabeth Ramos</strong> at (509) 837-2712 or eramos@msdr.org.
-            Conference Agenda will be posted shortly.
 		</a>
 	</div>
 	<nav id="mainNav" class="navbar sticky-top navbar-expand-custom navbar-dark bg-secondary shadow-sm">
@@ -424,7 +426,7 @@
             <script type="application/javascript" src="#assetPath#"></script>
         </cfif>
     </cfloop>
-    <script type="application/javascript" src="#html.elixirPath( "includes/js/app.js" )#"></script>
+    <!---<script type="application/javascript" src="#html.elixirPath( "includes/js/app.js" )#"></script>--->
 </body>
 </html>
 </cfoutput>
