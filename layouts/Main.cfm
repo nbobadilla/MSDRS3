@@ -426,7 +426,9 @@
             <script type="application/javascript" src="#assetPath#"></script>
         </cfif>
     </cfloop>
-    <!---<script type="application/javascript" src="#html.elixirPath( "includes/js/app.js" )#"></script>--->
+	<!---This is causing a javascript error behind in inspect where it is looking for Vue. 
+		However this is needed for the slideshow to work. We need to look into this--->
+    <script type="application/javascript" src="#html.elixirPath( "includes/js/app.js" )#"></script>
 </body>
 </html>
 </cfoutput>
