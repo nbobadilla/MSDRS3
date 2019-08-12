@@ -53,6 +53,7 @@ component accessors="true" singleton{
             "qualcrop": {"id":1, "friendlyName":"qualifying activities and crops", "AWSId": "0959C3BB-DCF2-4738-B0B3D0DC147CCE0A.pdf"},
             "rcguide": {"id":1, "friendlyName":"recruiters guide to determine eligibility", "AWSId": "75FBA290-4AAF-4C09-834C91103C882649.pdf"},
             "physical": {"id":1, "friendlyName":"migrant physical and dental exams", "AWSId": "BDDCE52D-9743-4599-BCA3566C34091540.pdf"},
+            "grid": { "friendlyName":"Sessions Grid", "URL":  "https://www.msdr.org/includes/images/SESSIONSGRID.pdf"}
             /**/
 
 
@@ -63,7 +64,7 @@ component accessors="true" singleton{
 		return this;
 	}
     function getAWSResource(required friendlyName){
-
+        /*Convert later to handle local files*/
         if(structKeyExists(variables.links,friendlyName)){
             return variables.links[friendlyName]
         }else{
@@ -74,7 +75,12 @@ component accessors="true" singleton{
         var cloudLocation = 'https://s3-us-west-2.amazonaws.com/msdr-msis-data/cache/file/';
         var AWSResource = getAWSResource(friendlyName);
         if(isStruct(AWSResource)){
-            return cloudLocation&AWSResource.AWSId;
+            if(structKeyExists(AWSResource,'AWSId')){
+                return cloudLocation&AWSResource.AWSId;
+            }
+            else{
+                return AWSResource.URL;
+            }
         }else{
             return AWSResource;
         }

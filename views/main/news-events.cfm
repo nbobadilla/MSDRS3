@@ -14,7 +14,7 @@
                     <a class="nav-link text-secondary" href="#pageURL###title5">Voices from the Field</a>
                     <a class="nav-link text-secondary" href="#pageURL###conference">WA MEP Conference 2019 <span class="badge badge-warning">Registion Closed</span></a>
                     <nav class="nav flex-column rounded ml-4">
-                        <a class="nav-link text-secondary" href="includes/images/sessionsgrid.pdf">Sessions Grid</a>
+                        <a class="nav-link text-secondary" href="#link('grid')#">Sessions Grid</a>
                         <!---<a class="nav-link text-secondary" href="/main/attendee-registration.cfm">Attendee Registration</a>
                         <a class="nav-link text-secondary" href="/main/exhibitor-registration.cfm">Exhibitor Registration</a>--->
                     </nav>
@@ -109,7 +109,7 @@
                     <p class="d-flex flex-column">
                         <!---<a href="/main/attendee-registration.cfm" class="p-1">Click here to register as an <strong>Attendee</strong></a>
                         <a href="/main/exhibitor-registration.cfm" class="p-1">Click here to register as an <strong>Exhibitor</strong></a>--->
-                        <a href="includes/images/sessionsgrid.pdf">Click here to download the 2019 State MEP Conference Sessions Grid</a>
+                        <a href="#link('grid')#">Click here to download the 2019 State MEP Conference Sessions Grid</a>
                     </p>
                     
                     <a class="sr-only sr-only-focusable" href="#pageURL###sideNav">Return to Side Navigation</a>
