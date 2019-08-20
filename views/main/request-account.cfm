@@ -17,6 +17,12 @@
                     before access to the MSIS or the Migrant Education Health Portal is granted.
                 </p>--->
                 <p>
+                    All new users that would like to request access to student level data in MSIS must submit this online form.
+                    Once this online form has been submitted, you will receive a confirmation email 
+                    to the email address you provided. After your email address is confirmed, please allow one week for the approval
+                    process to be completed. You will be emailed your MSIS password as soon as the approval process is complete.
+                </p>
+                <p>
                     The Migrant Student Data, Recruitment and Support (MSDRS) student records are protected by the 
                     <a href="#link('FERPA')#">Family Educational Rights and Privacy Act (FERPA)</a>, 
                     federal regulations which assign rights to students 

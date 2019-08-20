@@ -27,6 +27,13 @@ component{
 			};
 		} );
 
+		// coe route
+		route("/ecoe",function(event,rc,prc){
+
+            relocate( url="https://msis.msdr.org/ecoe" );
+
+        });
+
 		// Conventions based routing
 		route( ":handler/:action?" ).end();
 	}
