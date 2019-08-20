@@ -36,7 +36,7 @@
 	<!---CSS Styling to customize breakpoint of the nav bar and other Bootstrap styling extended--->
 	<style>
 		body{
-			font-weight: 300;
+			font-weight: 300;/**/
 		}
 		strong{
 			font-weight: bold
@@ -174,7 +174,7 @@
 
 <body id="body">
 	<a class="sr-only sr-only-focusable" href="#pageURL###mainBody">Skip Navigation</a>
-	<!---Top Alert Bar--->
+	<!---Top Alert Bar
 	<div id="nav-alert" class="bg-alert p-3">
 		<a href="/main/news-events.cfm##conference" class="ml-5 pl-3 text-decoration-none">
 			<!---Click here to register for the 2019 Washington State Migrant Education Program Conference.--->
@@ -182,7 +182,7 @@
             We have reached registration capacity. If you have any questions regarding onsite registration options, 
             please contact: <strong>Elizabeth Ramos</strong> at (509) 837-2712 or eramos@msdr.org.
 		</a>
-	</div>
+	</div>--->
 	<nav id="mainNav" class="navbar sticky-top navbar-expand-custom navbar-dark bg-secondary shadow-sm">
 		
 		<a class="navbar-brand mr-auto" href="/" alt="Migrant Student Data, Recruitment and Support" aria-label="Return to Home Page">
@@ -279,7 +279,7 @@
 					<h6>Navigation</h6>
 					<p class="d-flex flex-column">
 						
-						<a href="/main/news-events.cfm##conference">State MEP Conference <span class="badge badge-warning">Registration Closed</span></a>
+						<!---<a href="/main/news-events.cfm##conference">State MEP Conference <span class="badge badge-warning">Registration Closed</span></a>--->
 						<a href="/">Home</a>
 						<a href="/main/log-in.cfm?redirect=FER"><abbr title="Family Eligibility Review" aria-label="Family Eligibility Review">FER</abbr> Scheduler</a>
 						<a href="http://health.msdr.org/">Health Program</a>
