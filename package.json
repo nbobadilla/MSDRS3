@@ -4,7 +4,7 @@
         "@babel/plugin-syntax-jsx": "^7.2.0",
         "babel-helper-vue-jsx-merge-props": "^2.0.3",
         "babel-plugin-transform-vue-jsx": "^4.0.1",
-        "coldbox-elixir": "^3.0.0",
+        "coldbox-elixir": "^4.0.3",
         "jquery": "^3.4.1",
         "node-sass": "^4.12.0",
         "popper.js": "^1.15.0",
